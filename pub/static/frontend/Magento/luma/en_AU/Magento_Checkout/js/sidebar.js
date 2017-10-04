@@ -1,0 +1,1 @@
+/Applications/MAMP/htdocs/happybooks/vendor/magento/module-checkout/view/frontend/web/js/sidebar.js

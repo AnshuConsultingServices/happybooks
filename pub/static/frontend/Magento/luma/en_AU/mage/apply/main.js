@@ -1,0 +1,1 @@
+/Applications/MAMP/htdocs/happybooks/lib/web/mage/apply/main.js
