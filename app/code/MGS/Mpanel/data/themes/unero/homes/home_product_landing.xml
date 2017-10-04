@@ -1,0 +1,231 @@
+<home>
+	<section>
+		<name><![CDATA[block42]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[1]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block43]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[#f3f3f3]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[60]]></padding_top>
+		<padding_bottom><![CDATA[80]]></padding_bottom>
+		<block_position><![CDATA[2]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block44]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[full-width]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[3]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block45]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[4]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block46]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[5]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block47]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[60]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[6]]></block_position>
+	</section>
+	<block>
+		<block_name><![CDATA[block43-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 text-center]]></class>
+		<block_content><![CDATA[<h6 class="landing-subtitle">WOOD VASE DECORATE</h6>
+<div class="landing-desc">&ldquo; The planter&rsquo;s droplet shape creates<br /> a striking display for your favorite plant to<br /> take root. Hang a single plant, or create a<br /> pattern with multiples. &rdquo;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block43-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[0]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 100px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block44-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="row">
+<div class="content-table">
+<div class="content-table-row">
+<div class="content-table-col">
+<div class="text-landing">
+<h6 class="landing-subtitle">DESIGN STORY</h6>
+<div class="landing-desc small">Logan was intrigued by the idea of combining two materials into a singular form using the 3D printing process. The planter&rsquo;s duality makes use of each material&rsquo;s inherent properties; polished metal for an ultra precise bracket and porcelain for a smooth, voluminous container.</div>
+</div>
+</div>
+<div class="content-table-col"><img style="min-width: 100%;" class="img-responsive lazy" src="{{media url="wysiwyg/panel/blank.png"}}" alt="" data-src="{{media url="wysiwyg/panel/landing2.jpg"}}" /></div>
+</div>
+<div class="content-table-row">
+<div class="content-table-col"><img style="min-width: 100%;" class="img-responsive lazy" src="{{media url="wysiwyg/panel/blank.png"}}" alt="" data-src="{{media url="wysiwyg/panel/landing3.jpg"}}" /></div>
+<div class="content-table-col">
+<div class="text-landing">
+<h6 class="landing-subtitle">DETAIL PRODUCT</h6>
+<p style="font-size: 18px; color: #010101; line-height: 30px; letter-spacing: 0.025em;">This droplet-shaped planter is crafted in 3D Printed Porcelain, with the option of a 3D Printed Polished Gold Steel or 3D Printed Polished Bronze hook. Available with drainage hole or without for outdoor or indoor use. Numbered Edition.</p>
+<p style="font-size: 16px;"><strong style="color: #000;">MATERIAL:</strong>&nbsp;<span style="color: #666666;">Natural Wood J18</span></p>
+<p style="font-size: 16px; margin: 0;"><strong style="color: #000;">DIMENSION:</strong>&nbsp;<span style="color: #666666;">3.25&rdquo;W x 7.75&rdquo;H x 3.25&rdquo;D</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block45-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="row"><img class="img-responsive lazy" style="min-width: 100%;" src="{{media url="wysiwyg/panel/blank5.png"}}" alt="" data-src="{{media url="wysiwyg/panel/landing4.jpg"}}" /></div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block46-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="row"><img class="img-responsive lazy" style="margin: 0 auto;" src="{{media url="wysiwyg/panel/blank5.png"}}" alt="" data-src="{{media url="wysiwyg/panel/landing5.jpg"}}" /></div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block43-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 100px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block42-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="row"><img class="img-responsive lazy" style="min-width: 100%;" src="{{media url="wysiwyg/panel/blank5.png"}}" alt="" data-src="{{media url="wysiwyg/panel/banner_product_landing.jpg"}}" /></div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block47-0]]></block_name>
+		<type><![CDATA[special_product]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"title":"","additional_content":"","animation":"","animation_delay":"","product_name_temp":"Beebay Full Length Denim","product_id":"16","ratio":"1","landing_mode":"1","product_description":"1","characters_count":"150","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","product_name":0,"product_price":0,"product_rating":0,"product_categories":0,"product_addcart":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[{{block class="MGS\Mpanel\Block\Products\SpecialProduct" mgs_panel_title="" mgs_panel_note="" product_id="16" ratio="1" product_name="0" product_price="0" product_rating="0" product_categories="0" product_description="1" product_addcart="0" landing_mode="1" characters_count="150" template="products/single/default.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block47-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[0]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 60px;">&nbsp;</div>]]></block_content>
+	</block>
+	<theme_setting>
+		<general>
+			<footer>footer_4</footer>
+			<header>header_5</header>
+		</general>
+		<fonts>
+			<custom_fonts_element>.landing-desc</custom_fonts_element>
+			<custom_font_fml>Libre+Baskerville</custom_font_fml>
+		</fonts>
+		<custom_style>
+			<style>.cms-index-index #placeholder-header{display: none !important}
+.cms-index-index .header .header-placeholder .header-content{background: none}
+.cms-index-index .header .header-placeholder.active-sticky .header-content{background: #fff}</style>
+		</custom_style>
+	</theme_setting>
+
+</home>

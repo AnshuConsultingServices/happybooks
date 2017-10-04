@@ -1,0 +1,315 @@
+<home>
+	<section>
+		<name><![CDATA[block33]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[1]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block34]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[60]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[2]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block35]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[column-padding-5]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[3]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block36]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[full-width-boxed]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[55]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[4]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block37]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[50]]></padding_top>
+		<padding_bottom><![CDATA[30]]></padding_bottom>
+		<block_position><![CDATA[5]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block38]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[6]]></block_position>
+	</section>
+	<block>
+		<block_name><![CDATA[block34-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 60px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block34-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="content-heading">
+<h3 class="title">Featured Collections</h3>
+<div class="block-note">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  <br>Excepteur sint occaecat cupidatat non proident..</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block35-0]]></block_name>
+		<type><![CDATA[promo_banner]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"unero_modern_short_tshirts_banner"}]]></setting>
+		<col><![CDATA[8]]></col>
+		<class><![CDATA[col-sm-12 col-xs-12 margin-bottom10]]></class>
+		<block_content><![CDATA[{{widget type="MGS\Promobanners\Block\Widget\Banner" banner_id="unero_modern_short_tshirts_banner" template="banner.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block35-0]]></block_name>
+		<type><![CDATA[promo_banner]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"unero_modern_basic_backoacks_banner"}]]></setting>
+		<col><![CDATA[4]]></col>
+		<class><![CDATA[col-sm-6 col-xs-12 margin-bottom10]]></class>
+		<block_content><![CDATA[{{widget type="MGS\Promobanners\Block\Widget\Banner" banner_id="unero_modern_basic_backoacks_banner" template="banner.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block35-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[3]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[clearfix visible-lg visible-md col-xs-12]]></class>
+		<block_content><![CDATA[<div class="no-display">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block35-0]]></block_name>
+		<type><![CDATA[promo_banner]]></type>
+		<position><![CDATA[4]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"unero_modern_leather_sneaker_banner"}]]></setting>
+		<col><![CDATA[4]]></col>
+		<class><![CDATA[col-sm-6 col-xs-12 margin-bottom10]]></class>
+		<block_content><![CDATA[{{widget type="MGS\Promobanners\Block\Widget\Banner" banner_id="unero_modern_leather_sneaker_banner" template="banner.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block35-0]]></block_name>
+		<type><![CDATA[promo_banner]]></type>
+		<position><![CDATA[5]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","banner_id":"unero_modern_simple_snapbacks_banner"}]]></setting>
+		<col><![CDATA[8]]></col>
+		<class><![CDATA[col-xs-12 margin-bottom10]]></class>
+		<block_content><![CDATA[{{widget type="MGS\Promobanners\Block\Widget\Banner" banner_id="unero_modern_simple_snapbacks_banner" template="banner.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block36-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 60px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block36-0]]></block_name>
+		<type><![CDATA[attribute_products]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"title":"Popular Products","additional_content":"","animation":"","animation_delay":"","attribute":"is_bestseller_product","limit":"8","perrow":"4","numbercol":"1","percol":"","template":"grid.phtml","ratio":"1","use_slider":"1","number_row":"1","navigation":"1","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","autoplay":0,"stop_auto":0,"pagination":0,"use_tabs":0,"loadmore":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[{{block class="MGS\Mpanel\Block\Products\Attributes" mgs_panel_title="Popular Products" mgs_panel_note="" limit="8" ratio="1" category_ids="" attribute="is_bestseller_product" use_slider="1" loadmore="0" template="products/attribute/grid.phtml" perrow="4" autoplay="0" stop_auto="0" navigation="1" pagination="0" number_row="1"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block36-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[3]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="browse-all-products"><a href="#">Browse All Products</a></div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block38-0]]></block_name>
+		<type><![CDATA[instagram]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"title":"See It Styled On Instagram","additional_content":"","animation":"","animation_delay":"","limit":"10","perrow":"8","resolution":"low_resolution","padding":"1","link":"1","use_slider":"1","number_row":"1","like":0,"autoplay":0,"stop_auto":0,"navigation":0,"pagination":0,"comment":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 full-width]]></class>
+		<block_content><![CDATA[{{block class="MGS\Social\Block\Panel\Widget" mgs_panel_title="See It Styled On Instagram" mgs_panel_note="" limit="10" resolution="low_resolution" link="1" perrow="8" use_slider="1" padding="1" like="0" comment="0" autoplay="0" stop_auto="0" navigation="0" pagination="0" number_row="1" template="widget/instagram.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block33-0]]></block_name>
+		<type><![CDATA[video_banner]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","video_type":"youtube","video_url":"j6h_mYulg_w","video_background":"fashion.mp4","poster_image":"video_banner.jpg","autoplay":"1","loop":"1","muted":"1","preload":"1","height":"920","html_content":"<div class=\"video-subtitle hidden-xs\">SUMMER LOOKBOOK 2017<\/div>\r\n<div class=\"video-title\">COME OF STYLE<\/div>\r\n<div class=\"hidden-xs\">It is a long established fact that a reader will be distracted by the<br> readable content of a page when looking at its layout.<\/div> \r\n<a href=\"#\" class=\"link\">Discover Now<\/a>","controls":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 full-width]]></class>
+		<block_content><![CDATA[{{block class="Magento\Framework\View\Element\Template" autoplay="1" controls="0" loop="1" poster_image="video_banner.jpg" video_background="fashion.mp4" muted="1" video_type="youtube" video_url="j6h_mYulg_w" preload="1" height="920" html_content="&lt;div class=&quot;video-subtitle hidden-xs&quot;&gt;SUMMER LOOKBOOK 2017&lt;/div&gt;
+&lt;div class=&quot;video-title&quot;&gt;COME OF STYLE&lt;/div&gt;
+&lt;div class=&quot;hidden-xs&quot;&gt;It is a long established fact that a reader will be distracted by the&lt;br&gt; readable content of a page when looking at its layout.&lt;/div&gt; 
+&lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;Discover Now&lt;/a&gt;" template="MGS_Mpanel::widget/video_banner.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block37-0]]></block_name>
+		<type><![CDATA[latest_posts]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"title":"From Our Blog","additional_content":"","animation":"","animation_delay":"","post_category":["1","2","3","4"],"number_of_posts":"3","items":"3","template":"default.phtml","show_thumbnail":"1","show_short_content":"1","limit_characters_short_content":"100","number_row":"1","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","view_as":0,"autoplay":0,"stop_auto":0,"navigation":0,"pagination":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[{{widget type="MGS\Blog\Block\Widget\Latest" mgs_panel_title="From Our Blog" post_category="1,2,3,4" number_of_posts="3" items="3" show_thumbnail="1" mgs_panel_note="" template="widget/default.phtml" show_short_content="1" limit_characters_short_content="100"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block37-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 100px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block37-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[0]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 60px;">&nbsp;</div>]]></block_content>
+	</block>
+	<promo_banner>
+		<item>
+			<title><![CDATA[Unero Modern Short T-Shirts Banner]]></title>
+			<filename><![CDATA[/m/-/m-cat1.jpg]]></filename>
+			<url><![CDATA[]]></url>
+			<button><![CDATA[]]></button>
+			<text_align><![CDATA[top-left]]></text_align>
+			<content><![CDATA[<h3>Short T-Shirts</h3>
+<a href="#">Shop Now</a>]]></content>
+			<effect><![CDATA[mist-text]]></effect>
+			<custom_class><![CDATA[]]></custom_class>
+			<status><![CDATA[1]]></status>
+			<identifier><![CDATA[unero_modern_short_tshirts_banner]]></identifier>
+		</item>
+		<item>
+			<title><![CDATA[Unero Modern Basic Backpacks Banner]]></title>
+			<filename><![CDATA[/m/-/m-cat2.jpg]]></filename>
+			<url><![CDATA[]]></url>
+			<button><![CDATA[]]></button>
+			<text_align><![CDATA[top-left]]></text_align>
+			<content><![CDATA[<h3>Basic Backpacks</h3>
+<a href="#">Shop Now</a>]]></content>
+			<effect><![CDATA[mist-text]]></effect>
+			<custom_class><![CDATA[]]></custom_class>
+			<status><![CDATA[1]]></status>
+			<identifier><![CDATA[unero_modern_basic_backoacks_banner]]></identifier>
+		</item>
+		<item>
+			<title><![CDATA[Unero Modern Leather Sneaker Banner]]></title>
+			<filename><![CDATA[/m/-/m-cat3.jpg]]></filename>
+			<url><![CDATA[]]></url>
+			<button><![CDATA[]]></button>
+			<text_align><![CDATA[top-left]]></text_align>
+			<content><![CDATA[<h3>Leather Sneaker</h3>
+<a href="#">Shop Now</a>]]></content>
+			<effect><![CDATA[mist-text]]></effect>
+			<custom_class><![CDATA[]]></custom_class>
+			<status><![CDATA[1]]></status>
+			<identifier><![CDATA[unero_modern_leather_sneaker_banner]]></identifier>
+		</item>
+		<item>
+			<title><![CDATA[Unero Modern Simple Snapbacks Banner]]></title>
+			<filename><![CDATA[/m/-/m-cat4.jpg]]></filename>
+			<url><![CDATA[]]></url>
+			<button><![CDATA[]]></button>
+			<text_align><![CDATA[top-left]]></text_align>
+			<content><![CDATA[<h3>Simple Snapbacks</h3>
+<a href="#">Shop Now</a>]]></content>
+			<effect><![CDATA[mist-text]]></effect>
+			<custom_class><![CDATA[]]></custom_class>
+			<status><![CDATA[1]]></status>
+			<identifier><![CDATA[unero_modern_simple_snapbacks_banner]]></identifier>
+		</item>
+	</promo_banner>
+	<theme_setting>
+		<general>
+			<footer>footer_2</footer>
+			<header>header_5</header>
+		</general>
+		<custom_style>
+			<style>.footer .middle-footer{background-color: #fff}</style>
+		</custom_style>
+	</theme_setting>
+
+</home>

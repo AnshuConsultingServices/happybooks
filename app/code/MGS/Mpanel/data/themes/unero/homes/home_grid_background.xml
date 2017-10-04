@@ -1,0 +1,118 @@
+<home>
+	<section>
+		<name><![CDATA[block39]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[1]]></block_position>
+	</section>
+	<block>
+		<block_name><![CDATA[block39-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 full-width]]></class>
+		<block_content><![CDATA[<div class="slider-background-wrapper">
+    <div class="slider-grid-container">
+        <div class="slider-grid-content">
+            <div class="slider-items-content">
+                <div class="item-content active">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">New items</h2>
+                        <span class="desc">New arrival March 2017</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Discount Items</h2>
+                        <span class="desc">Don’t miss out!</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Furnitures</h2>
+                        <span class="desc">Chair, sofa, shelve</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Bags</h2>
+                        <span class="desc">Backpack, Duffles</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Shoes</h2>
+                        <span class="desc">Sneakers, leathers, boots</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Decoration</h2>
+                        <span class="desc">Living room, kitchen</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Sunglasses</h2>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Clocks</h2>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">News</h2>
+                        <span class="desc">Latest from our blog</span>
+                    </a>
+                </div>
+                <div class="item-content">
+                    <a href="#" class="item-inner">
+                        <h2 class="title">Lookbook</h2>
+                        <span class="desc">Let discover</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-images-content">
+            <div class="item-image active" style="background-image:url(pub/media/wysiwyg/panel/bg_slider1.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider2.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider3.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider4.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider5.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider6.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider7.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider8.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider9.jpg)"></div>
+            <div class="item-image" style="background-image:url(pub/media/wysiwyg/panel/bg_slider10.jpg)"></div>
+        </div>
+    </div>
+</div>]]></block_content>
+	</block>
+	<theme_setting>
+		<general>
+			<footer>footer_1</footer>
+			<header>header_1</header>
+		</general>
+		<custom_style>
+			<style>.header.header1 .header-placeholder .table-icon-menu .navbar-toggle-menu{
+padding-left: 15px;}
+.header.header1 .header-placeholder .table-icon-menu .navbar-toggle-menu button span{display: none}</style>
+		</custom_style>
+	</theme_setting>
+
+</home>

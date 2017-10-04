@@ -1,0 +1,230 @@
+<home>
+	<section>
+		<name><![CDATA[block7]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[50]]></padding_bottom>
+		<block_position><![CDATA[1]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block8]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[6,6]]></block_cols>
+		<tablet_cols><![CDATA[["6","6"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12","12"]]]></mobile_cols>
+		<block_class><![CDATA[["",""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[2]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block9]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[80]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[3]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block10]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[50]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[4]]></block_position>
+	</section>
+	<block>
+		<block_name><![CDATA[block8-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/mi-banner1.jpg"}}" alt="hc-cat1" /> </a> <span class="text"> Sale Up To 30% Off</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Simple Sneakers</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block8-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block8-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[3]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate text-position-center">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/mi-banner3.jpg"}}" alt="hc-cat1" /> </a><span class="text" style="left: -75px;"> most wanted</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Wood DIY Collection</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block8-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block8-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate text-position-center text-position-right">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/mi-banner2.jpg"}}" alt="hc-cat1" /> </a> <span class="text">Sale Up To 50% Off</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Bags &amp; Backpacks</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block8-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[3]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 280px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block8-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[4]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="view-all-link "><a href="#">View all<br> new arrivals</a></div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block9-0]]></block_name>
+		<type><![CDATA[attribute_products]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"title":"Trending Items","additional_content":"","animation":"","animation_delay":"","attribute":"is_featured_product","limit":"8","perrow":"4","numbercol":"1","percol":"","template":"grid.phtml","ratio":"1","use_slider":"1","number_row":"1","navigation":"1","text_colour":"","link_colour":"","link_hover_colour":"","button_colour":"","button_hover_colour":"","button_text_colour":"","button_text_hover_colour":"","button_border_colour":"","button_border_hover_colour":"","autoplay":0,"stop_auto":0,"pagination":0,"use_tabs":0,"loadmore":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[{{block class="MGS\Mpanel\Block\Products\Attributes" mgs_panel_title="Trending Items" mgs_panel_note="" limit="8" ratio="1" category_ids="" attribute="is_featured_product" use_slider="1" loadmore="0" template="products/attribute/grid.phtml" perrow="4" autoplay="0" stop_auto="0" navigation="1" pagination="0" number_row="1"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block9-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="browse-all-products"><a href="#">Browse All Products</a></div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block9-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[0]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 100px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block7-0]]></block_name>
+		<type><![CDATA[owl_banner]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","links":["","","","","","","","",""],"images":["home_minimal_1.png","home_minimal_2.png"],"fullscreen":"1","effect":"1","autoplay":"1","speed":"5000","navigation":"1","pagination":"1","loop":"1","stop_auto":0,"rtl":0,"parallax":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[{{block class="MGS\Mpanel\Block\Widget\OwlCarousel" images="home_minimal_1.png,home_minimal_2.png" links=",,,,,,,," fullscreen="1" autoplay="1" stop_auto="0" navigation="1" parallax="0" pagination="1" loop="1" rtl="0" speed="5000" effect="1" template="widget/owl_slider.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block7-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 70px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block10-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 30px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block10-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="newsletter-home style-v2">
+<div class="row">
+<div class="col-md-5 col-xs-12">
+<div class="newsletter-title">Get Discount 20% Off</div>
+<div class="newsletter-desc">Subscribe our newsletter and get discount 20% off</div>
+</div>
+<div class="col-md-7 col-sm-12 col-xs-12">{{block class="Magento\\Newsletter\\Block\\Subscribe" template="Magento_Newsletter::subscribe.phtml"}}</div>
+</div>
+</div>]]></block_content>
+	</block>
+	<theme_setting>
+		<general>
+			<footer>footer_2</footer>
+			<header>header_5</header>
+		</general>
+	</theme_setting>
+
+</home>

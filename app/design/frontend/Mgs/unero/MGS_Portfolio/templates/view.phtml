@@ -1,0 +1,192 @@
+<?php $portfolio = $this->getPortfolio() ?>
+<?php $themeHelper = $this->helper('MGS\Mpanel\Helper\Data'); ?>
+<?php $shareThisPortfolio = false; ?>
+<?php if($themeHelper->getStoreConfig('mpanel/share_config/enabel_share') && $themeHelper->getStoreConfig('mpanel/share_config/share_portfolio')): ?>
+    <?php $shareThisPortfolio = true; ?>
+<?php endif ?>
+<div class="portfolio-details">
+    <?php $date = $portfolio->getPortfolioDate() ?>
+    <?php if ($date != '' || $shareThisPortfolio): ?>
+    <div class="portfolio-entry-meta">
+        <div class="row">
+            <?php if ($date != ''): ?>
+            <div class="<?php if($shareThisPortfolio): ?>col-sm-6 <?php endif ?>col-xs-12">
+                <time class="date_create" datetime="<?php echo $date ?>"><?php echo date('F d, Y', strtotime($date)) ?></time>
+            </div>
+            <?php endif ?>
+            <?php if($shareThisPortfolio): ?>
+                <div class="<?php if ($date != ''): ?>col-sm-6 has-date<?php endif ?> col-xs-12">
+                    <div class="sharthis-socials-wrapper">
+                        <?php echo $block->getChildHtml('portfolio.detail.sharethis'); ?>
+                    </div>
+                </div>
+            <?php endif ?>
+        </div>
+    </div>
+    <?php endif ?>
+    <?php // Description ?>
+    <div class="row">
+        <div class="col-sm-8 col-sm-push-2 col-xs-12">
+            <div class="description">
+                <?php echo nl2br($portfolio->getDescription()) ?>
+            </div>
+        </div>
+    </div>
+    <?php $galleryArray = $this->getBaseImage($portfolio); ?>
+    <?php if(count($galleryArray) > 1): ?>
+    <div class="porfolio-gallery-image row">
+        <div class="gallery-image-carousel owl-carousel margin-top70">
+            <?php $psi=0; foreach($galleryArray as $_img): $psi++; ?>
+                <?php if($psi != 1): ?>
+                    <a class="gallery_image" href="<?php echo $_img; ?>">
+                        <img src="<?php echo $_img; ?>" alt="" class="img-responsive"/>
+                    </a>
+                <?php endif ?>
+            <?php endforeach ?>
+        </div>
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'mgs/owlcarousel'
+            ], function(jQuery){
+                (function($) {
+                    $(".gallery-image-carousel").owlCarousel({
+                        items: 2,
+                        loop: true,
+                        nav: false,
+                        dots: false,
+                        autoHeight: true,
+                        autoplay: false,
+                        autoplayHoverPause: false
+                    });
+                })(jQuery);
+            });
+            
+            require([
+                'jquery',
+                'magnificPopup'
+            ], function(jQuery){
+                (function($) {
+                    $(document).ready(function() {
+                        $('.gallery-image-carousel').magnificPopup({
+                            delegate: '.owl-item:not(.cloned) a',
+                            type: 'image',
+                            tLoading: 'Loading image #%curr%...',
+                            mainClass: 'mfp-img-gallery',
+                            fixedContentPos: true,
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                                preload: [0,1]
+                            },
+                            image: {
+                                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                                titleSrc: function(item) {
+                                return item.el.attr('title');
+                                }
+                            }
+                        });
+                    });
+                })(jQuery);
+            });
+        </script>
+    </div>
+    <?php endif ?>
+	<div class="portfolio-detail-items">
+		<?php $client = $portfolio->getClient() ?>
+        <?php if ($client != ''): ?>
+            <div class="portfolio-detail-item-content">
+                <strong><?php echo __('Client:') ?></strong>
+                <div class="value"><?php echo $client ?></div>
+            </div>
+        <?php endif ?>
+
+        <?php $service = $portfolio->getServices() ?>
+        <?php if ($service != ''): ?>
+            <div class="portfolio-detail-item-content">
+                <strong><?php echo __('Project:') ?></strong>
+                <div class="value"><a href="<?php echo $portfolio->getProjectUrl() ?>" target="_blank"><?php echo $service ?></a></div>
+            </div>
+        <?php endif ?>
+
+        <?php $skills = $portfolio->getSkills() ?>
+        <?php if ($skills != ''): ?>
+            <div class="portfolio-detail-item-content">
+                <strong><?php echo __('Skills:') ?></strong>
+                <div class="value"><?php echo $skills ?></div>
+            </div>
+        <?php endif ?>
+	</div>
+    
+    
+    <?php // Related Portfolio ?>
+    <?php $relatedPortfolio = $this->getRelatedPortfolio($portfolio) ?>
+    <?php if (count($relatedPortfolio) > 0): ?>
+        <div class="portfolio-related">
+            <div class="content-heading">
+                <h3 class="title"><?php echo __('Related Works') ?></h3>
+            </div>
+            <div class="row">
+                <div class="owl-carousel portfolio-widget portfolio-carousel one-row" id="portfolio_carousel">
+                    <?php foreach ($relatedPortfolio as $_portfolio): ?>
+                        <div class="item">
+                            <div class="portfolio-top-content">
+                                <div class="image">
+                                    <?php $thumbnailUrl = $this->getThumbnailSrc($_portfolio) ?>
+                                    <?php $portfolioUrl = $this->getPortfolioAddress($_portfolio) ?>
+                                    <?php if($thumbnailUrl): ?>
+                                        <div class="image-item" style="background-image: url('<?php echo $thumbnailUrl ?>');">
+                                            <a href="<?php echo $portfolioUrl; ?>"><img src="<?php echo $thumbnailUrl ?>" alt="<?php echo $_portfolio->getName() ?>" class="img-responsive"/></a>
+                                        </div>
+                                    <?php endif ?>
+                                </div>
+                                <div class="portfolio-bottom-content">
+                                    <?php if($this->getCategoriesLink($_portfolio)): ?><div class="category-links"><?php echo $this->getCategoriesLink($_portfolio) ?></div><?php endif ?>
+                                    <a class="title" href="<?php echo $portfolioUrl; ?>"><?php echo $_portfolio->getName() ?></a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            require([
+                'jquery',
+                'mgs/owlcarousel'
+            ], function (jQuery) {
+                (function ($) {
+                    $("#portfolio_carousel").owlCarousel({
+                        items: 3,
+                        nav: true,
+                        dots: false,
+                        autoplay: false,
+                        navText: ["<i class='pe-7s-angle-left'></i>","<i class='pe-7s-angle-right'></i>"],
+                        responsive: {
+                            0: {
+                                items: 1,
+                                nav: false,
+                                dots: true
+                            },
+                            480: {
+                                items: 2,
+                                nav: false,
+                                dots: true
+                            },
+                            992: {
+                                items: 3,
+                                nav: true,
+                                dots: false
+                            },
+                        }
+                    });
+                })(jQuery);
+            });
+        </script>
+    <?php endif ?>
+</div>
+
+
+
+

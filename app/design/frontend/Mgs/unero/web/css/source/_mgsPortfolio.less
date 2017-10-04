@@ -1,0 +1,176 @@
+.portfolio-grid {
+    .portfolio-top-content a {
+        img {
+            opacity: 1;
+            min-width: 100%;
+            .transition(all 300ms);
+        }
+        &:hover img {
+            opacity: 0.7;
+        }
+    }
+    .portfolio-bottom-content {
+        margin-top: 25px;
+        text-align: center;
+        .category-link a {
+            color: #999;
+            padding: 0 8px;
+            &:hover {
+                color: #000;
+            }
+        }
+        .title {
+            font-size: 24px;
+            font-weight: 400;
+            margin: 10px 0 0;
+            &:hover {
+                color: @base-color;
+            }
+        }
+    }
+}
+
+// Portfolio Detail
+.portfolio-index-view {
+    .breadcrumbs {
+        display: none;
+    }
+    .portfolio-image {
+        padding: 220px 30px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        position: relative;
+        background-size: cover;
+        .portfolio_title {
+            text-align: center;
+        }
+        .page-header-content {
+            display: inline-table;
+            background-color: #fff;
+            padding: 35px 50px 30px;
+            text-align: center;
+            margin: 0 auto;
+            h1 {
+                font-size: 30px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            .category-links a {
+                color: #999;
+                padding: 0 8px;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }   
+        &.no-images {
+            padding: 100px 30px 0 !important;
+            .page-header-content {
+                padding: 35px 0 30px !important;
+            }
+        }
+    }
+    .portfolio-related, .portfolio-details .description, .portfolio-details .porfolio-gallery-image {
+        margin-top: 70px;
+    }
+    .porfolio-gallery-image .owl-item {
+        padding: 0 15px;
+        a {
+            cursor: zoom-in;
+        }
+    }
+}
+
+.portfolio-widget {
+    .portfolio-top-content .image .image-item {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        a {
+            display: block;
+            padding-bottom: 100%;
+            background-color: transparent;
+            &:hover {
+                background-color: rgba(255,255,255,0.3);
+            }
+        }
+        img {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    .owl-item {
+        padding: 0 15px;
+    }
+    .portfolio-bottom-content {
+        padding-top: 17px;
+        text-align: center;
+        .title {
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+            line-height: 1.2;
+            display: block;
+            &:hover {
+                color: @base-color;
+            }
+        }
+        .category-links {
+            a {
+                color: #999;
+                margin: 0 8px;
+                &:hover {
+                    color: #000;
+                }
+            }
+            + .title {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.portfolio-entry-meta {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 100px;
+    .date_create {
+        line-height: 30px;
+        display: block;
+        color: #000;
+    }
+    .col-xs-12:not(.col-sm-6) .date_create {
+        text-align: center;
+    }
+    .col-sm-6 + .col-sm-6 .sharthis-socials-wrapper .sharethis-inline-share-buttons {
+        text-align: right !important;
+    }
+}
+
+.portfolio-detail-items {
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    color: #999;
+    margin-top: 100px;
+    padding: 15px 0;
+    text-align: center;
+    .portfolio-detail-item-content {
+        font-weight: 600;
+        padding: 0 15px;
+        display: inline-block;
+        strong {
+            color: #000;
+            font-weight: 600;
+        }
+        .value {
+            color: #999;
+            font-weight: 400;
+            display: inline-block;
+        }
+    }
+}
+

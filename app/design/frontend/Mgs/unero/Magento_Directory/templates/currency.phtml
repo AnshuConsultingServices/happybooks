@@ -1,0 +1,64 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Currency switcher
+ *
+ * @see \Magento\Directory\Block\Currency
+ */
+?>
+<?php if ($block->getCurrencyCount() > 1): ?>
+<?php $currencies = $block->getCurrencies(); ?>
+<?php $currentCurrencyCode = $block->getCurrentCurrencyCode(); ?>
+<?php $id = $block->getIdModifier() ? '-' . $block->getIdModifier() : ''?>
+<div class="dropdown dropdown-switcher switcher-currency" id="switcher-currency<?php /* @escapeNotVerified */ echo $id?>">
+	<h4 class="title hidden-md hidden-sm hidden-xs" ><?php echo __('Currencies')?></h4>
+	<button class="custom-toggle alone" type="button">
+		<?php $j=0; foreach ($currencies as $_code => $_name): $j++;?>
+			<?php if ($_code == $currentCurrencyCode): ?>
+				<span class="code"><?php echo $_code ?></span> 
+				<span class="name"><?php echo $_name ?></span> 
+			<?php endif; ?>
+		<?php endforeach; ?>
+		<?php if ($j > 1):?>
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		<?php endif;?>
+	</button>
+	<ul class="dropdown-custom">
+		<?php foreach ($currencies as $_code => $_name): ?>
+			<?php if ($_code == $currentCurrencyCode): ?>
+				<li class="currency-<?php echo $_code ?> switcher-option active">
+					<a href="javascript:void(0);">
+						<span class="code"><?php echo $_code ?></span> 
+						<span class="name"><?php echo $_name ?></span> 
+					</a>
+				</li>
+			<?php endif; ?>
+		<?php endforeach; ?>
+		
+		<?php  $i=0; foreach ($currencies as $_code => $_name):  ?>
+			<?php if ($_code != $currentCurrencyCode):  $i++; ?>
+				<li class="currency-<?php echo $_code ?> switcher-option <?php if ($i > 2) echo __('not');?>">
+					<a href="#" data-post='<?php echo $block->getSwitchCurrencyPostData($_code); ?>'>
+						<span class="code"><?php echo $_code ?></span> 
+						<span class="name"><?php echo $_name ?></span> 
+					</a>
+				</li>
+			<?php endif; ?>
+		<?php endforeach; ?>
+	</ul>
+	<?php if ($i>2): ?>
+		<button class="custom-toggle" type="button"> 
+			<span class="less"><?php echo __('less . . .')?></span>
+			<span class="more"><?php echo __('more . . .')?></span>
+		</button>
+	<?php endif; ?>
+</div>
+<?php endif; ?>

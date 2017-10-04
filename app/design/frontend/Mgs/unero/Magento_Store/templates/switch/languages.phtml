@@ -1,0 +1,60 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Language switcher template
+ */
+?>
+<?php if (count($block->getStores())>1): ?>
+	<?php $id = $block->getIdModifier() ? '-' . $block->getIdModifier() : ''?>
+	<div class="dropdown dropdown-switcher switcher-language" id="switcher-language<?php /* @escapeNotVerified */ echo $id?>">
+		<h4 class="title hidden-md hidden-sm hidden-xs" ><?php echo __('Language')?></h4>
+		<button class="custom-toggle alone" type="button">
+			<?php $j=0; foreach ($block->getStores() as $_lang): $j++;?>
+				<?php if ($_lang->getId() == $block->getCurrentStoreId()):?>
+					<span class="name"><?php echo $block->escapeHtml($_lang->getName()) ?></span>
+					<span class="code"><img alt="<?php echo $_lang->getCode(); ?>" src="<?php echo $block->getViewFileUrl('images/flags/' . $_lang->getCode() . '.png') ?>" /></span>
+				<?php endif; ?>
+			<?php endforeach; ?>
+			<?php if ($j > 1):?>
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+			<?php endif;?>
+		</button>
+		<ul class="dropdown-custom">
+			<?php foreach ($block->getStores() as $_lang): ?>
+				<?php if ($_lang->getId() == $block->getCurrentStoreId()):?>
+					<li class="active view-<?php echo $block->escapeHtml($_lang->getCode()); ?> switcher-option">
+						<a href="javascript:void(0);">
+							<span class="code"><img alt="<?php echo $_lang->getCode(); ?>" src="<?php echo $block->getViewFileUrl('images/flags/' . $_lang->getCode() . '.png') ?>" /></span>
+							<span class="name"><?php echo $block->escapeHtml($_lang->getName()) ?></span>
+						</a>
+					</li>
+				<?php endif; ?>
+			<?php endforeach; ?>
+			<?php $i=0; foreach ($block->getStores() as $_lang): ?>
+				<?php if ($_lang->getId() != $block->getCurrentStoreId()): $i++;?>
+					<li class="view-<?php echo $block->escapeHtml($_lang->getCode()); ?> switcher-option <?php if ($i > 2) echo __('not');?>">
+						<a href="#" data-post='<?php echo $block->getTargetStorePostData($_lang); ?>'>
+							<span class="code"><img alt="<?php echo $_lang->getCode(); ?>" src="<?php echo $block->getViewFileUrl('images/flags/' . $_lang->getCode() . '.png') ?>" /></span>
+							<span class="name"><?php echo $block->escapeHtml($_lang->getName()) ?></span>
+						</a>
+					</li>
+				<?php endif; ?>
+			<?php endforeach; ?>
+		</ul>
+		<?php if ($i>2): ?>
+			<button class="custom-toggle" type="button"> 
+				<span class="less"><?php echo __('less . . .')?></span>
+				<span class="more"><?php echo __('more . . .')?></span>
+			</button>
+		<?php endif; ?>
+	</div>
+<?php endif; ?>
+

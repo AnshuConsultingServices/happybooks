@@ -1,0 +1,362 @@
+// MY ACCOUNT
+.block-dashboard-orders .block-title {
+    margin-bottom: 20px;
+    strong {
+        color: #000;
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+    .action.view {
+        color: @base-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.my-account-main .block-title, 
+.block-title--myac, 
+body.account .main .block-title,
+.form-create-account .block-title {
+    margin-bottom: 20px;
+    .title, h3 {
+        color: #000;
+        display: block;
+        font-size: 24px;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+}
+
+
+.login-container .block .block-title h2,
+.form-create-account h2 {
+	font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+.form-create-account .fieldset + .fieldset  {
+	margin-top: 50px;
+}
+.customer-name-fields .field {
+	margin-bottom: 15px;
+}
+
+
+.account-sub-title {
+	font-size: 16px;
+	color: #2a2a2a;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.block-dashboard-orders {
+    margin-bottom: 60px;
+	.table-order-items {
+		margin: 0;
+		tr {
+			th, td {
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+			th {
+				text-transform: uppercase;
+				color: #000;
+				font-weight: 700;
+				border-top: 1px solid #f0f0f0 !important;
+			}
+			td.col.actions .action.view:after {
+				content: "|";
+				display: inline-block;
+				margin: 0 10px;
+			}
+		}
+	}
+}
+
+.block-order-details-comments .order-comments .comment {
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    padding: 15px;
+	.comment-date {
+		color: @base-color;
+	}
+}
+
+.items.order-links {
+    display: table;
+    margin: 20px auto 40px;
+    width: 100%;
+	li {
+		display: table-cell;
+		text-align: center;
+		padding: 10px 15px;
+		border-bottom: 4px solid #000;
+		text-transform: uppercase;
+		color: #000;
+		&.current, &:hover {
+			border-color: @base-color;
+			color: @base-color;
+		}
+		strong {
+			font-weight: 500;
+		}
+	}
+}
+
+.order-details-items {
+	&.shipments .order-title {
+		padding: 15px 0;
+		margin: 20px 0;
+		border-top: 1px dashed #ddd;
+		border-bottom: 1px dashed #ddd;
+		strong {
+			display: block;
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		.action.track {
+			margin-left: 30px;
+		}
+	}
+	.table-wrapper {
+		.table-caption {
+			display: none;
+		}
+		thead tr th {
+			text-transform: uppercase;
+			color: #000;
+			border-bottom: none;
+			font-weight: 700;
+			font-size: 14px;
+			font-family: inherit !important;
+			text-align: center;
+			&:first-child {
+				padding-left: 0;
+				text-align: left;
+				background: none;
+			}
+		}
+		tbody tr td {
+			vertical-align: middle;
+			text-align: center;
+			&:first-child {
+				padding-left: 0;
+				text-align: left;
+				background: none;
+			}
+			&.col.name {
+				font-weight: 500;
+			}
+		}
+		tfoot tr {
+			th {
+				padding-left: 0;
+				text-align: left;
+				background: none;
+			}
+			th , td, th strong {
+				font-size: 16px;
+				font-weight: 400;
+				color: #2a2a2a;
+			}
+			&.grand_total {
+				th , td {
+					strong {
+						font-size: 20px;
+						color: @base-color;
+					}
+				}
+			}
+			td {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.block-order-details-view {
+    padding-top: 40px;
+	.block-title h4 {
+		color: #222;
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-weight: 500;
+		font-size: 18px;
+	}
+	.block-content .box {
+		margin-bottom: 30px;
+	}
+}
+
+.box-order-billing-method .payment-method .title {
+	color: #2a2a2a;
+}
+
+.page-print {
+	.page-main .logo {
+		text-align: center;
+		display: block;
+	}
+	table {
+		margin: 30px 0;
+		thead tr th {
+			text-transform: uppercase;
+			color: #000;
+			border-bottom: none;
+			font-weight: 700;
+			font-size: 14px;
+			font-family: inherit !important;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+			text-align: center !important;
+		}
+		tr td {
+			text-align: center !important;
+			vertical-align: middle;
+			border: 1px solid #f0f0f0;
+		}
+	}
+}
+
+.btn-print {
+    border-bottom: 2px solid #2a2a2a;
+    padding: 0px 0 5px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2a2a2a;
+	.icon {
+		font-size: 18px;
+		margin-right: 8px;
+	}
+	&:hover {
+		border-color: @base-color;
+	}
+}
+
+.shipping-tracking-popup {
+	.column.main {
+		width: 100% !important;
+	}
+	.page.tracking {
+		.subtitle.caption {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			color: #000;
+			font-size: 18px;
+		}
+		.actions .action.close {
+			border-bottom: 2px solid #000;
+			padding: 0px 0 5px;
+			display: inline-block;
+			line-height: 1;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #000
+		}
+	}
+}
+
+.orders-history .table-order-items {
+	thead tr th {
+		text-transform: uppercase;
+		color: #2a2a2a;
+		text-align: center;
+		border: none !important;
+		font-weight: 700;
+		&:first-child {
+			padding-left: 0;
+			text-align: left;
+		}
+	}
+	tbody tr td {
+		text-align: center;
+		&:first-child {
+			padding-left: 0;
+			text-align: left;
+		}
+		&.actions .action.view:after {
+			content: "|";
+			margin: 0 8px;
+			display: inline-block
+		}
+	}
+}
+
+.order-products-toolbar,
+.downloadable-products-toolbar,
+.products-reviews-toolbar {
+	.pager {
+		margin: 0 auto;
+		.limiter {
+			display: none;
+		}
+	}
+}
+
+.table-downloadable-products {
+	thead tr th {
+		text-transform: uppercase;
+		color: #2a2a2a;
+		text-align: center;
+		border: none !important;
+		font-weight: 700;
+		&:first-child {
+			padding-left: 0;
+			text-align: left;
+		}
+	}
+	tbody tr td {
+		text-align: center;
+		&:first-child {
+			padding-left: 0;
+			text-align: left;
+		}
+	}
+}
+
+.form-edit-account {
+	.field.choice {
+		margin-bottom: 10px;
+	}
+	.fieldset.password {
+		margin-top: 30px;
+	}
+}
+
+.block-dashboard-addresses {
+    margin-top: 60px;
+}
+
+.account .field.street .control > input + .nested {
+	margin-top: 10px;
+}
+
+.form-address-edit .fieldset {
+	.field.choice {
+		margin-bottom: 15px;
+	}
+	+ .fieldset {
+		margin-top: 30px;
+	}
+}
+
+.block-addresses-list .items.addresses li.item {
+    border-top: 1px dashed #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+	&:first-child {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	.btn-secondary {
+		margin-left: 10px;
+	}
+}

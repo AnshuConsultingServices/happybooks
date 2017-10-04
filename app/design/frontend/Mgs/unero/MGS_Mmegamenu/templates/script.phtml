@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	function toggleEl(el, elId){
+		require([
+			'jquery',
+		], function(jQuery){
+			(function($) {
+				if($(el).hasClass("active")){
+					$(el).parent().parent().find('> ul').slideUp();
+					$(el).removeClass('active');
+				}else{
+					$(el).parent().parent().parent().parent().parent().find('.sub-menu>li>ul').slideUp();
+					$(el).parent().parent().parent().parent().parent().find('.sub-menu>li>.toggle-menu>a').removeClass('active');
+					$(el).parent().parent().parent().find('>li>ul').slideUp();
+					$(el).parent().parent().parent().find('>li>.toggle-menu>a').removeClass('active');
+					$(el).addClass('active');
+					$(el).parent().parent().find('> ul').slideDown();
+				}
+				
+			})(jQuery);
+		});
+	}
+	require([
+		'jquery',
+	 ], function(jQuery){
+		 (function($) {
+			 $('.mega-menu-content li.level1>.toggle-menu>a').click(function(){
+				 if(!$(this).hasClass("active")){
+					$('.mega-menu-content li.level1> ul').slideUp();
+					$('.mega-menu-content li.level1>.toggle-menu>a').removeClass('active');
+				}
+			 });
+		})(jQuery);
+	});
+	
+</script>

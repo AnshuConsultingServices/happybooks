@@ -1,0 +1,93 @@
+// Template: Magento_Theme::templates/newletter-popup.phtml
+.modal_newsletter_popup {
+    text-align: center;
+    .mfp-close {
+        position: absolute;
+        background-color: #999999;
+        border: 0 none;
+        color: #fff;
+        font-size: 30px;
+        height: 40px;
+        line-height: 40px;
+        opacity: 1;
+        padding: 0;
+        right: 10px;
+        font-size: 28px;
+        top: 10px;
+        width: 40px;
+        &:before {
+            content: none;
+        }
+        em {
+            display: block;
+        }
+        &:hover {
+            background-color: #000;
+        }
+    }
+    .block-popup-subscribe {
+        padding: 10px;
+        position: relative;
+        .block-popup-top {
+            border: 1px solid #ccc;
+        }
+    }
+    .newsletter_popup {
+        margin: 0 auto;
+        background-color: #fff;
+        position: relative;
+        text-align: center;
+    }
+    .pop-sletter-title h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight:600;
+    }
+    .newsletter-popup-content {
+        text-align: center;
+        padding: 20px 0 0;
+    }
+    .newsletter-popup-form {
+        form {
+            .form-group {
+                margin-bottom: 20px;
+            }
+            .actions {
+                padding: 0 0 30px;
+                .btn {
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+        input[type="email"] {
+            text-align: center;
+        }
+        .pop-sletter-footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            background-color: #f4f4f4;
+        }
+        div.checkbox {
+            color: #333333;
+            padding: 0px 8px 10px;
+            margin: 0;
+            label {
+                font-size: 14px;
+                display: inline-block;
+            }
+            input {
+                margin-top: 4px;
+            }
+        }
+    }
+    .block-popup-top .block-popup-content {
+        width: 355px;
+        padding-top: 42px;
+        font-size: 14px;
+        color: #666666;
+        margin-left: 45px;
+        padding-bottom: 7px;
+    }
+}

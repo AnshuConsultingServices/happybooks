@@ -1,0 +1,219 @@
+<home>
+	<section>
+		<name><![CDATA[block5]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[full-width-boxed style-2]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[1]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[1]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block6]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[6,6]]></block_cols>
+		<tablet_cols><![CDATA[["6","6"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12","12"]]]></mobile_cols>
+		<block_class><![CDATA[["",""]]]></block_class>
+		<class><![CDATA[]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[50]]></padding_top>
+		<padding_bottom><![CDATA[50]]></padding_bottom>
+		<block_position><![CDATA[2]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block28]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[hidden-xs]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[0]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[65]]></padding_top>
+		<padding_bottom><![CDATA[65]]></padding_bottom>
+		<block_position><![CDATA[3]]></block_position>
+	</section>
+	<block>
+		<block_name><![CDATA[block5-0]]></block_name>
+		<type><![CDATA[owl_banner]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":"","links":["","","","","","","","","","",""],"images":["home_category_1.png","home_category_2.png"],"effect":"1","autoplay":"1","speed":"5000","navigation":"1","pagination":"1","loop":"1","fullscreen":0,"stop_auto":0,"rtl":0,"parallax":0}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[]]></class>
+		<block_content><![CDATA[{{block class="MGS\Mpanel\Block\Widget\OwlCarousel" images="home_category_1.png,home_category_2.png" links=",,,,,,,,,," fullscreen="0" autoplay="1" stop_auto="0" navigation="1" parallax="0" pagination="1" loop="1" rtl="0" speed="5000" effect="1" template="widget/owl_slider.phtml"}}]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[0]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/hc-cat1.jpg"}}" alt="hc-cat1" /> </a> <span class="text"> Sale Up To 30% Off</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Chairs &amp; Sofas</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate text-position-center">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/hc-cat3.jpg"}}" alt="hc-cat1" /> </a><span class="text" style="left: -75px;"> most wanted</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Eye Glass Collection</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[4]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate text-position-center">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/hc-cat5.jpg"}}" alt="hc-cat1" /> </a> <span class="text">available on store</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Light Trending 2017</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate text-position-center text-position-right">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/hc-cat2.jpg"}}" alt="hc-cat1" /> </a> <span class="text">Sale Up To 50% Off</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Bags &amp; Backpacks</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[3]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="banner-cate text-position-center text-position-right">
+<div class="banner-cate-image"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/panel/hc-cat4.jpg"}}" alt="hc-cat1" /> </a> <span class="text">Sale Up To 30% Off</span></div>
+<div class="banner-cate-name">
+<h2><a href="#">Decoration</a></h2>
+</div>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[3]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[4]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[5]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12]]></class>
+		<block_content><![CDATA[<div class="newsletter-home">
+<div class="newsletter-title margin-bottom25">Get <span class="color-theme">10%</span> Discount</div>
+<div class="margin-bottom55">Get 10% discount with notified about the latest news and<br /> updates. No spam, we promise !</div>
+{{block class="Magento\\Newsletter\\Block\\Subscribe" template="Magento_Newsletter::subscribe.phtml"}}</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block5-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[2]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 70px;">&nbsp;</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block6-1]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[0]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[col-xs-12 hidden-xs]]></class>
+		<block_content><![CDATA[<div style="height: 190px;">&nbsp;</div>]]></block_content>
+	</block>
+	<theme_setting>
+		<general>
+			<footer>footer_3</footer>
+			<header>header_3</header>
+			<layout>boxed-full</layout>
+		</general>
+		<custom_style>
+			<style>@media (min-width: 768px){
+body.boxed:not(.panel-popup) .page-wrapper {
+    max-width: calc(100% - 60px) !important;
+}
+}
+body.boxed:not(.panel-popup) .page-wrapper {
+     margin: 30px auto;
+}</style>
+		</custom_style>
+	</theme_setting>
+
+</home>

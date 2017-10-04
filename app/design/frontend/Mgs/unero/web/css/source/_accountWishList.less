@@ -1,0 +1,78 @@
+// MY WISHLIST
+.products-grid.wishlist {
+	.product-item-info {
+		border: 1px solid #f0f0f0;
+        .border-radius(0 0 5px 5px);
+		padding-bottom: 15px;
+		> * {
+			padding: 0 15px;
+		}
+		.product-item-photo {
+            padding: 0 !important;
+            img {
+                position: static;
+            }
+        }
+		.product-item-name {
+			margin-top: 10px;
+			display: block;
+			a {
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+        .price-box {
+            margin: 10px 0 13px;
+        }
+        .comment-box .label {
+            display: none;
+        } 
+		.box-tocart {
+			.field.qty {
+				padding: 0;
+                margin: 0 0  10px;
+                float: none;
+				> .label {
+					display: none !important;
+				}
+				> .control .input-text {
+                    width: 100%;
+				}
+			}
+			.product-item-actions .tocart {
+                width: 100%;
+                .fa {
+                    display: none;
+                }
+			}
+		}
+	}	
+    .product-item-actions {
+        margin-top: 10px;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .action {
+            display: block;
+            width: calc(~'50% - 5px');
+            height: 40px;
+            line-height: 38px;
+            text-align: center;
+            border: 1px solid #ddd;
+            text-align: center;
+            margin-right: 5px;
+            float: left;
+            + .action {
+                margin-left: 5px;
+                margin-right: 0;
+            }
+            &:hover {
+                border-color: #2a2a2a;
+                background-color: #2a2a2a;
+                color: #fff;
+            }
+        }
+    }
+}

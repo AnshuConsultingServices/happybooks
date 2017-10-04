@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/happybooks/vendor/magento/module-ui/view/base/web/js/modal/alert.js

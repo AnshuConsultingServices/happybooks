@@ -139,22 +139,6 @@ require.config(config);
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-/*eslint no-unused-vars: 0*/
-var config = {
-    map: {
-        '*': {
-            'mediaUploader':  'Magento_Backend/js/media-uploader'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
 
 var config = {
     paths: {
@@ -182,6 +166,22 @@ var config = {
         '*': {
             systemMessageDialog: 'Magento_AdminNotification/system/notification',
             toolbarEntry:   'Magento_AdminNotification/toolbar_entry'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+/*eslint no-unused-vars: 0*/
+var config = {
+    map: {
+        '*': {
+            'mediaUploader':  'Magento_Backend/js/media-uploader'
         }
     }
 };
@@ -229,6 +229,25 @@ var config = {
 require.config(config);
 })();
 (function() {
+var config = {
+	"map": {
+		"*": {
+			"lookbookUploader": "MGS_Lookbook/js/fileuploader",
+			"lookbookAnnotate": "MGS_Lookbook/js/jquery.annotate",
+		}
+	},
+	"paths": {            
+		"lookbookUploader": "MGS_Lookbook/js/fileuploader",
+		"lookbookAnnotate": "MGS_Lookbook/js/jquery.annotate",
+	},   
+    "shim": {
+		"MGS_Lookbook/js/fileuploader": ["jquery"],
+		"MGS_Lookbook/js/jquery.annotate": ["jquery"]
+	}
+};
+require.config(config);
+})();
+(function() {
 /**
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
@@ -237,9 +256,9 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            requireCookie: 'Magento_Cookie/js/require-cookie'
+            orderEditDialog: 'Magento_Sales/order/edit/message'
         }
-    } 
+    }
 };
 
 require.config(config);
@@ -269,7 +288,23 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            orderEditDialog: 'Magento_Sales/order/edit/message'
+            requireCookie: 'Magento_Cookie/js/require-cookie'
+        }
+    } 
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            fptAttribute: 'Magento_Weee/js/fpt-attribute'
         }
     }
 };
@@ -340,11 +375,12 @@ require.config(config);
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-
+/*eslint no-unused-vars: 0*/
 var config = {
     map: {
         '*': {
-            fptAttribute: 'Magento_Weee/js/fpt-attribute'
+            newVideoDialog:  'Magento_ProductVideo/js/new-video-dialog',
+            openVideoModal:  'Magento_ProductVideo/js/video-modal'
         }
     }
 };
@@ -361,23 +397,6 @@ var config = {
     map: {
         '*': {
             transparent:            'Magento_Payment/transparent'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2013-2017 Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-/*eslint no-unused-vars: 0*/
-var config = {
-    map: {
-        '*': {
-            newVideoDialog:  'Magento_ProductVideo/js/new-video-dialog',
-            openVideoModal:  'Magento_ProductVideo/js/video-modal'
         }
     }
 };

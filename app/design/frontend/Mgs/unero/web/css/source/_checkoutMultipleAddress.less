@@ -1,0 +1,412 @@
+// CHECKOUT WITH MULTIPLE ADDRESS
+.page-layout-checkout .page-main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+// CHOOSE ADDRESS
+#multiship-addresses-table {
+	thead tr th {
+		color: #2b2b2b;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 14px 30px 11px;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid #eaeaea;
+	}
+	thead, tbody {
+		tr {
+			th, td {
+				&.qty, &.actions {
+					width: 1%;
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+	tbody tr td {
+		text-align: center;
+		vertical-align: middle;
+		padding: 15px 30px;
+		border: 1px solid #eaeaea;
+		&.actions {
+			.action.delete {
+				background-color: #fff;
+				border: 1px solid #e6e6e6;
+				.border-radius(0);
+				color: #6c6c6c;
+				cursor: pointer;
+				display: inline-block;
+				font-size: 13px;
+				height: 34px;
+				line-height: 32px;
+				width: 34px;
+				text-align: center;
+				.border-radius(5px);
+				&:hover {
+					color: #fff;
+					background-color: #2a2a2a;
+					border-color: #2a2a2a;
+				}
+			}
+		}
+		.field {
+			.label {
+				display: none;
+			}
+			&.qty {
+                margin: 0;
+                input {
+                    width: 80px;
+                    text-align: center;
+                    color: #2a2a2a;
+                }
+            }
+            &.address {
+                margin: 0;
+            }
+		}
+		&.product {
+			text-align: left;
+			.product-item-name {
+				font-weight: 400;
+				font-size: 16px;
+				color: #2a2a2a;
+				a {
+					font-weight: 400;
+					font-size: 16px;
+					color: #2a2a2a;
+					&:hover {
+						color: @base-color;
+					}
+				}
+			}
+		}
+		.item-options dt {
+			margin-top: 10px;
+			font-weight: 400;
+			color: #2a2a2a;
+			&:after {
+				content: ":";
+			}
+		}
+	}
+}
+
+// SHIPPING METHOD
+.multishipping-checkout-shipping {
+	table {
+		thead tr th {
+			color: #2b2b2b;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 14px 30px 11px;
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid #eaeaea !important;
+            &.item {
+                text-align: left;
+            }
+		}
+		tr th.qty {
+			width: 100px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		tbody {
+			tr td {
+				border: 1px solid #eaeaea !important;
+				vertical-align: middle;
+				padding: 15px 30px;
+				&.qty {
+					color: #2b2b2b;
+					font-size: 16px;
+					text-align: center;
+				}
+				&.product, &.item {
+					text-align: left;
+				}
+				.product-item-name {
+					font-weight: 400;
+					font-size: 16px;
+					color: #2a2a2a;
+					a {
+						font-weight: 400;
+						font-size: 16px;
+						color: #2a2a2a;
+						&:hover {
+							color: @base-color;
+						}
+					}
+				}
+				.item-options {
+					margin: 0;
+					dt {
+						margin-top: 10px;
+						font-weight: 400;
+						color: #2a2a2a;
+						&:after {
+							content: ":";
+						}
+					}
+				}
+			}
+		}
+	}
+	.actions-toolbar {
+		border-top: 1px solid #f0f0f0;
+		padding-top: 15px;
+		margin-top: 30px;
+	}
+	.block.block-other {
+		margin-top: 50px;
+	}
+	.block.block-shipping + .block-shipping {
+		margin-top: 50px;
+	}
+	h4.box-title {
+		font-size: 20px;
+		margin-bottom: 15px;
+        font-weight: 400;
+	}
+	.box-shipping-method dt {
+		font-size: 15px;
+		font-weight: 400;
+		color: #1a1a1a;
+		+ dt {
+			margin-top: 10px;
+		}
+	}
+	.box-shipping-method .gift-message {
+		.legend {
+			border: none;
+			font-size: 18px;
+			color: #2a2a2a;
+			margin-bottom: 15px;
+			+ br {
+				display: none;
+			}
+		}
+		.options-items {
+			margin-top: 10px;
+		}
+	}
+}
+
+.gift-message .options-items .items .item {
+	padding-top: 15px;
+	border-top: 1px solid #f0f0f0;
+	margin-top: 15px;
+	.product {
+		.number {
+			font-weight: 700;
+			color: #2a2a2a;
+		}
+		.img.photo.container {
+			width: 100px !important;
+			padding: 0;
+			margin: 10px 0 0;
+		}
+		.product-name {
+			display: block;
+			font-weight: 400;
+			font-size: 16px;
+			margin-top: 10px;
+			color: #1a1a1a;
+		}
+	}
+	.options {
+		.action.activate {
+			padding: 0;
+			margin: 0;
+			&:after {
+				content: "\f107";
+				font-family: "FontAwesome";
+				font-size: 14px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 10px;
+			}
+			&.active:after {
+				content: "\f106";
+			}
+		}
+	}
+	.block.message {
+		padding: 0;
+		margin-top: 10px;
+        .fieldset {
+            padding: 0 !important;
+        }
+	}
+}
+
+// BILLING ADDRESS
+.block-billing .title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.multicheckout .block-billing .box-billing-address + .box-billing-address {
+	margin-top: 50px;
+}
+.multishipping-checkout-billing {
+	.block-content .box + .box {
+		margin-top: 50px;
+	}
+	.box-billing-method .box-content dl {
+		.item-title {
+			position: relative;
+			padding: 10px 0 10px 20px;
+			input {
+				position: absolute;
+				left: 0;
+				top: 11px;
+				margin: 0;
+			}
+			label {
+				font-size: 16px;
+				font-weight: 600;
+			}
+		}
+		> * {
+			max-width: 600px;
+		}
+	}
+}
+
+// OVERVIEW
+@keyframes fadeIn { 
+  from { opacity: 0.4; } 
+}
+
+.multishipping-checkout-overview {
+	table {
+		thead {
+			tr th {
+				color: #2b2b2b;
+				font-size: 16px;
+				font-weight: 400;
+				padding: 14px 30px 11px;
+				text-align: center;
+				vertical-align: middle;
+				border: 1px solid #eaeaea !important;
+			}
+		}
+		tr th.qty {
+			width: 100px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		tbody {
+			tr td {
+				border: 1px solid #eaeaea !important;
+				vertical-align: middle;
+				text-align: center;
+				padding: 15px 30px;
+				&.qty {
+					color: #2b2b2b;
+					font-size: 16px;
+					text-align: center;
+				}
+				&.product, &.item {
+					text-align: left;
+				}
+				.product-item-name {
+					font-weight: 400;
+					font-size: 16px;
+					color: #2a2a2a;
+					a {
+						font-weight: 400;
+						font-size: 16px;
+						color: #2a2a2a;
+						&:hover {
+							color: @base-color;
+						}
+					}
+				}
+			}
+		}
+		tr td .item-options dt {
+			margin-top: 10px;
+			font-weight: 400;
+			color: #2a2a2a;
+		}
+		tfoot {
+			tr {
+				th, td {
+					background: none;
+					font-size: 16px;
+					padding: 14px 30px 11px;
+					border: 1px solid #eaeaea;
+					font-weight: 400;
+					color: #2a2a2a;
+				}
+				&.grand.totals {
+					th, td {
+						font-size: 20px;
+						color: @base-color;
+					}
+				}
+				td {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.checkout-review {
+		margin-top: 50px;
+		text-align: right;
+		.grand.totals strong {
+			background: none;
+			font-weight: 400;
+			font-size: 24px;
+			color: #2a2a2a;
+		}
+		.action-finish-checkout {
+			margin-top: 8px;
+			.btn-lg {
+				min-width: 300px;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 14px;
+				letter-spacing: 0.1em;
+			}
+			.action.back {
+				display: block;
+				text-align: right;
+				margin-top: 15px;
+			}
+			.please-wait {
+				margin-top: 14px;
+				animation: fadeIn 1s infinite alternate;
+				font-size: 16px;
+			}
+		}
+	}
+	h4.box-title {
+		font-size: 18px;
+		color: #2a2a2a;
+		margin-bottom: 15px;
+	}
+	form .block + .block {
+		margin-top: 50px;
+	}
+	.block-content .box + .box {
+		margin-top: 30px;
+	}
+	.box-billing-method .payment-method dt {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.block-shipping {
+		.block-content + .block-content {
+			margin-top: 30px;
+		}
+		strong.box-title {
+			font-size: 15px;
+			color: #2a2a2a;
+		}
+	}
+}

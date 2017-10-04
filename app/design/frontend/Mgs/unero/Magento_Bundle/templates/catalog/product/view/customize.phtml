@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+
+<?php $_product = $block->getProduct() ?>
+<?php if ($_product->isSaleable() && $block->hasOptions()):?>
+    <div class="bundle-actions margin-bottom35">
+        <button id="bundle-slide"
+                class="action primary btn-full customize"
+                type="button">
+            <span><?php /* @escapeNotVerified */ echo __('Customize and Add to Cart'); ?></span>
+        </button>
+    </div>
+<?php endif;?>
+
+<?php echo $this->getChildHtml('product.info.social'); ?>

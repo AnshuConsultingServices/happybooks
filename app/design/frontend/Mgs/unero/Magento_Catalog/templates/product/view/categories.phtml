@@ -1,0 +1,25 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Catalog\Block\Product\View */
+?>
+<?php $_product = $block->getProduct(); ?>
+<?php $cats = $_product->getCategoryIds(); ?>
+
+<?php if(count($cats) > 0): ?>
+    <div class="product-sub-infomation--category">
+        <strong class="type"><?php echo __('Category'); ?></strong>
+        <div class="value">
+            <?php $j=0; foreach ($cats as $category_id): $j++; ?>
+                <?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); ?>
+                <?php $currentCate = $objectManager->create('Magento\Catalog\Model\Category')->load($category_id); ?>
+                <a href="<?php echo $currentCate->getUrl(); ?>"><?php echo $currentCate->getName(); ?></a><?php if($j != count($cats)): ?><span>,</span><?php endif ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
+<?php endif ?>

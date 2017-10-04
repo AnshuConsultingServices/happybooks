@@ -1,0 +1,138 @@
+<home>
+	<section>
+		<name><![CDATA[block29]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[collection_parallax]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[/p/a/parallax1.jpg]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[1]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[1]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block30]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[collection_parallax]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[/p/a/parallax2.jpg]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[1]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[2]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block31]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[collection_parallax]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[/p/a/parallax3.jpg]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[1]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[3]]></block_position>
+	</section>
+	<section>
+		<name><![CDATA[block32]]></name>
+		<theme_name><![CDATA[]]></theme_name>
+		<block_cols><![CDATA[12]]></block_cols>
+		<tablet_cols><![CDATA[["12"]]]></tablet_cols>
+		<mobile_cols><![CDATA[["12"]]]></mobile_cols>
+		<block_class><![CDATA[[""]]]></block_class>
+		<class><![CDATA[collection_parallax]]></class>
+		<background><![CDATA[]]></background>
+		<background_image><![CDATA[/p/a/parallax4.jpg]]></background_image>
+		<background_repeat><![CDATA[0]]></background_repeat>
+		<background_cover><![CDATA[0]]></background_cover>
+		<parallax><![CDATA[1]]></parallax>
+		<fullwidth><![CDATA[0]]></fullwidth>
+		<padding_top><![CDATA[]]></padding_top>
+		<padding_bottom><![CDATA[]]></padding_bottom>
+		<block_position><![CDATA[4]]></block_position>
+	</section>
+	<block>
+		<block_name><![CDATA[block29-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[]]></class>
+		<block_content><![CDATA[<div class="parallax-content">
+    <div class="parallax-subtitle">FEATURED COLLECTION</div>
+    <div class="parallax-title"><p>Top Best Selling Items<br> This Month</p></div> 
+    <a href="http://demo2.drfuri.com/unero/product-category/accessories/">View Collection</a>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block30-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[]]></class>
+		<block_content><![CDATA[<div class="parallax-content">
+    <div class="parallax-subtitle">BAGS COLLECTION</div>
+    <div class="parallax-title"><p>Unero Hand-Made<br> Leather Bags</p></div> 
+    <a href="http://demo2.drfuri.com/unero/product-category/accessories/">Discover Collection</a>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block31-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[]]></class>
+		<block_content><![CDATA[<div class="parallax-content">
+    <div class="parallax-subtitle">DECORATION COLLECTION</div>
+    <div class="parallax-title"><p>Scadinavan Decoration<br> For Bedroom</p></div> 
+    <a href="http://demo2.drfuri.com/unero/product-category/accessories/">View Collection</a>
+</div>]]></block_content>
+	</block>
+	<block>
+		<block_name><![CDATA[block32-0]]></block_name>
+		<type><![CDATA[static]]></type>
+		<position><![CDATA[1]]></position>
+		<setting><![CDATA[{"animation":"","animation_delay":""}]]></setting>
+		<col><![CDATA[12]]></col>
+		<class><![CDATA[]]></class>
+		<block_content><![CDATA[<div class="parallax-content">
+    <div class="parallax-subtitle">SHOE’S COLLECTION</div>
+    <div class="parallax-title"><p>Red Wings Leather Shoes<br> For Guys</p></div> 
+    <a href="http://demo2.drfuri.com/unero/product-category/accessories/">Discover Collection</a>
+</div>]]></block_content>
+	</block>
+	<theme_setting>
+		<general>
+			<footer>footer_3</footer>
+			<header>header_5</header>
+		</general>
+		<custom_style>
+			<style>.cms-index-index #placeholder-header{display: none !important}
+.cms-index-index .header .header-placeholder .header-content{background: none}
+.cms-index-index .header .header-placeholder.active-sticky .header-content,.cms-index-index .header .header-placeholder .header-content:hover{background: #fff}</style>
+		</custom_style>
+	</theme_setting>
+
+</home>

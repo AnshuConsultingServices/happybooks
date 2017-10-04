@@ -1,0 +1,29 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Catalog\Block\Product\View */
+?>
+<?php $_product = $block->getProduct(); ?>
+<?php $fromCate = $block->getRequest()->getParam(''); ?>
+<?php 
+
+$parameter = $_SERVER['QUERY_STRING'];
+echo  $parameter; ?>
+
+<div class="products-links">
+    <div class="nav-previous">
+        <a href="http://demo2.drfuri.com/unero/shop/simple-fabric-bags/" rel="prev">
+            <span class="icon-arrow-left"></span>
+        </a>
+    </div>
+    <div class="nav-next">
+        <a href="http://demo2.drfuri.com/unero/shop/brone-lamp-glasses/" rel="next">
+            <span class="icon-arrow-right"></span>
+        </a>
+    </div>
+</div>

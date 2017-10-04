@@ -1,0 +1,60 @@
+.mgs-blog-lastest-posts {
+    .post-item-content {
+        @media (min-width: 1200px) { 
+            .post-item-detail .post-content {
+                position: absolute;
+                top: 45px;
+                left: 40px;
+                right: 40px;
+                opacity: 0;
+                .transform(translateX(40px));
+                .transition(all .35s ease-in-out);
+            }
+            .short-content {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                right: 40px;
+                opacity: 0;
+                color: #999;
+                .transition-delay(.2s);
+                .transition(all .33s ease-in-out);
+                .transform(translateX(-40px));
+            }
+            &:hover {
+                border-color: #ddd;
+                .post-item-detail .post-content {
+                    opacity: 1;
+                    .transform(translateX(0));
+                }
+                .short-content {
+                    .transform(translateX(0));
+                    opacity: 1;
+                }
+                .thumbnail-post img {
+                    opacity: 0;
+                }
+            }
+        }
+        @media (max-width: 1199px) {
+            .post-item-detail .post-content {
+                padding-top: 20px;
+            }
+            .short-content {
+                p {
+                    display: none;
+                }
+                .post-link {
+                    margin-top: 10px;
+                }
+            }
+        }
+        @media (min-width: 480px) and (max-width: 767px) {
+            .thumbnail-post {
+                width: 40%;
+                float: left;
+                margin-right: 30px;
+            }
+        }
+    }
+}
