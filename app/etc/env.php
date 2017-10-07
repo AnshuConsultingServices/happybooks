@@ -2,11 +2,11 @@
 return array (
   'backend' => 
   array (
-    'frontName' => 'admin_1dx7ow',
+    'frontName' => 'admin_1x1lui',
   ),
   'crypt' => 
   array (
-    'key' => '69343600cf3fde52ca07dd30f39c6faf',
+    'key' => '72b5f19470606a6e1b656d055ce9c69e',
   ),
   'session' => 
   array (
@@ -54,6 +54,6 @@ return array (
   ),
   'install' => 
   array (
-    'date' => 'Wed, 04 Oct 2017 12:14:44 +0000',
+    'date' => 'Thu, 05 Oct 2017 10:50:32 +0000',
   ),
 );

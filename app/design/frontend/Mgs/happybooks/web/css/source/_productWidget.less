@@ -1,0 +1,76 @@
+// PRODUCT TAB
+.menu-product-tabs {
+    margin: 0 0 31px;
+    padding: 0;
+    border: none;
+	li {
+		display: inline-block;
+		list-style: outside none none;
+		padding: 20px;
+		margin-bottom: 0;
+		&:first-child {
+			padding-left: 0;
+		}
+		a {
+			color: #999;
+			font-size: 18px;
+			line-height: 1;
+			padding: 0;
+			background: none;
+			border: none;
+			&:hover, &:focus {
+				color: @base-color;
+				background: none;
+				border: none;
+			}
+		}
+		&.active {
+			a, a:hover, a:focus {
+				color: @base-color;
+				background: none;
+				border: none;
+			}
+		}
+	}
+}
+
+// SINGLE PRODUCT - LANDING TEMPLATE
+.product-landing-content {
+    text-align: center;
+    .product-item-name {
+        font-size: 36px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    .description {
+        max-width: 650px;
+        margin: 35px auto 0;
+    }
+    .price-box {
+        margin-top: 40px;
+    }
+    .btn-cart {
+        text-transform: uppercase;
+        margin-top: 45px;
+        min-width: 230px;
+    }
+    .price-box {
+        .old-price {
+            float: none;
+            vertical-align: top;
+            margin-right: 0;
+            margin-left: 15px;
+            .price {
+                color: #999;
+            }
+        }
+        .price {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000;
+        }
+        .special-price .price {
+            color: #c33;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.catalog-product-compare-index {
+	.table-wrapper {
+		border: 1px solid #f0f0f0;
+		max-width: 100%;
+		overflow-y: hidden;
+		padding: 15px;
+		overflow-x: auto;
+		.table-comparison {
+			margin-bottom: 0;
+			.table-caption {
+				display: none;
+			}
+			thead tr {
+				td, th {
+					border-top: 1px solid #f0f0f0 !important;
+				}
+			}
+			tr {
+				th {
+					text-transform: uppercase;
+					color: #2a2a2a;
+					min-width: 0px !important;
+					width: 1%;
+					font-weight: 600;
+				}
+				td, th {
+					min-width: 300px;
+					border-width: 1px !important;
+					border-style: solid;
+					border-color: #f0f0f0 !important;
+					padding: 10px;
+					vertical-align: middle;
+				}
+				td.cell.product.info {
+					background: none;
+					padding: 15px;
+					.product-item-actions .actions-primary {
+						margin-top: 9px;
+					}
+					.product-item-info {
+						margin-bottom: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}

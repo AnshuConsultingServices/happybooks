@@ -1,0 +1,48 @@
+.tabs_categories_porfolio_content {
+    @media (min-width: 1200px){
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+}
+
+.portfolio-grid {
+    .item {
+        @media (min-width: 1200px){
+            padding: 0 50px;
+            margin-bottom: 130px;
+        }
+        @media (max-width: 767px){
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width: 767px){
+        .portfolio-bottom-content .title {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .portfolio-entry-meta {
+        margin-top: 60px;
+        .date_create {
+            text-align: center;
+        }
+        .col-sm-6 + .col-sm-6 .sharthis-socials-wrapper .sharethis-inline-share-buttons {
+           text-align: center !important;
+        } 
+    }
+    .portfolio-index-view {
+        .portfolio-related, .portfolio-details .description, .portfolio-details .porfolio-gallery-image {
+            margin-top: 40px;
+        }
+    }
+    .portfolio-detail-items {
+        margin-top: 60px;
+        .portfolio-detail-item-content {
+            display: block;
+            + .portfolio-detail-item-content {
+                margin-top: 10px;
+            }
+        }
+    }
+}

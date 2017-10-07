@@ -1,0 +1,73 @@
+/* Add Custom Col For Bootstrap */
+.col {
+    &-lg-custom, &-md-custom {
+        &-5, &-7, &-8 {
+            float: left;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    &-lg-custom {
+        @media (min-width: 1200px) {
+            &-5 {
+                width: 20%;
+            }
+            &-7 {
+                width: calc(~'100% / 7');
+            }
+            &-8 {
+                width: 12.5%;
+            }
+        }
+    }
+    &-md-custom {
+        @media (min-width: 992px) {
+            &-5 {
+                width: 20%;
+            }
+            &-7 {
+                width: calc(~'100% / 7');
+            }
+            &-8 {
+                width: 12.5%;
+            }
+        }
+    }
+}
+.full-width-boxed {
+    @media (max-width: 767px){
+         .container-fluid, .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+/* Clear float */
+.first {
+    @media (min-width: 992px) {
+        &-row-item {
+            clear: left;
+        }
+    }
+    @media (min-width: 1200px) {
+        &-lg-item {
+            clear: left;
+            }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        &-md-item {
+            clear: left;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        &-sm-item {
+            clear: left;
+        }
+    }
+    @media (max-width: 767px) {
+        &-xs-item {
+            clear: left;
+        }
+    }
+}

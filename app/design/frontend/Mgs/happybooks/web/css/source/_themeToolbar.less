@@ -1,0 +1,200 @@
+/* Toolbar Category page */
+.category-product-actions {
+    margin-bottom: 30px;
+}
+
+/* Toolbar */
+.toolbar {
+    display: table;
+    width: 100%;
+    font-size: 16px;
+    color: #999;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    > div {
+        display: table-cell;
+        vertical-align: middle;
+        &.modes {
+            text-align: right;
+        }
+    }
+    .sorter-label, .limiter .label {
+        color: #999;
+        display: inline-block;
+        font-weight: inherit;
+        &:after {
+            content: ":";
+            display: inline-block;
+        }
+    }
+    .toolbar-sorter .sorter-action {
+        margin-left: 15px;
+        font-size: 14px;
+        > span {
+            border: 0;
+            clip: rect(0,0,0,0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        &:hover {
+            color: @base-color;
+        }
+        &:before {
+            display: inline-block;
+            font-family: FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        &.sort-asc:before {
+            content: "\f160";
+        }
+        &.sort-desc:before {
+            content: "\f161";
+        }
+    }
+    .modes {
+        .modes-label {
+            display: none;
+        }
+        .modes-mode {
+            font-size: 18px;
+            display: inline-block;
+            font-family: 'FontAwesome';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            > span {
+                border: 0;
+                clip: rect(0,0,0,0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+            + .modes-mode {
+                margin-left: 15px;
+            }
+            &.mode-grid:before {
+                content: "\f00a";
+            }
+            &.mode-list:before {
+                content: "\f03a";
+            }
+        }
+        a.modes-mode:hover {
+            color: @base-color;
+        }
+    }
+    .pages {
+        display: none;
+    }
+    .toolbar-amount {
+        color: #000;
+    }
+    .toolbar-number {
+        color: #c00;
+    }
+    select {
+        color: #000;
+        -webkit-appearance: none;
+        -moz-appearance: none;     
+        width: auto;
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding-right: 20px;
+        background-image: url(../images/bg-select-toolbar.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 10px;
+        padding-left: 0;
+        padding-right: 10px;
+        option {
+            padding: 5px 15px;
+            font-size: 14px;
+            &:first-child{ 
+                padding-top: 10px;
+            }
+            &:last-child{ 
+                padding-bottom: 10px;
+            }
+        }
+        &::-ms-expand {
+            display: none;
+        }
+    }
+}
+
+/* Bottom Toolbar */
+.bottom-pagination .toolbar {
+    > div {
+        display: none !important;
+    }
+    .list-inline {
+        display: block !important;
+        text-align: center; 
+        margin: 0;
+    }
+    .pages .pagination {
+        margin: 0 auto;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        li {
+            display: block;
+            float: left;
+            padding: 0 5px;
+        }
+    }
+}
+
+/* Pager Toolbar */
+.pagination > li  {
+    > a {
+        width: 40px;
+        height: 40px;
+        .border-radius(~'2px !important');
+        text-align: center;
+        float: none;
+        color: @pagination-text-color;
+        border-color: @pagination-border-color;
+        background-color: @pagination-background-color;
+        display: block;
+        font-size: 14px;
+        line-height: 38px;
+        padding: 0;
+        margin: 0;
+        &:hover, &:focus {
+            background-color: @pagination-active-background-color;
+            color: @pagination-active-text-color;
+            border-color: @pagination-active-border-color;
+        }
+    }
+    &.current > a {
+        cursor: default;
+        pointer-events: none;
+        background-color: @pagination-active-background-color;
+        border-color: @pagination-active-border-color;
+        color: @pagination-active-text-color;
+    }
+}

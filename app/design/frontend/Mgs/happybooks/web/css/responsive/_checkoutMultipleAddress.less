@@ -1,0 +1,81 @@
+// CHECKOUT WITH MULTIPLE ADDRESS
+
+// CHOOSE ADDRESS
+@media (max-width: 767px) {
+	#multiship-addresses-table {
+		thead {
+			display: none;
+		}
+		tbody tr {
+			display: block;
+			padding: 15px;
+			border: 1px solid #eaeaea;
+			td {
+				text-align: left !important;
+				padding: 0 !important;
+				display: block;
+				border: none;
+				+ td {
+					margin-top: 15px;
+				}
+				.field .label {
+					display: block !important;
+				}
+			}
+		}
+	}
+}
+
+// MULTIPLE ADDRESS CHECKOUT
+.multishipping-checkout-overview {
+	@media (max-width: 768px) {
+		.table-order-review {
+			thead tr {
+				display: block;
+				th {
+					display: none;
+					&.col.item {
+						display: block !important;
+						padding-left: 0;
+						padding-right: 0;
+						border: none !important;
+						text-align: left;
+					}
+				}
+			}
+			tbody, tfoot {
+				tr {
+					border: 1px solid #f0f0f0;
+					display: block;
+					padding: 15px;
+				}
+			}
+			tbody {
+				tr td {
+					display: block;
+					padding: 0 !important;
+					border: none !important;
+					text-align: left;
+					&:not(.item):before {
+						display: inline-block;
+						content: attr(data-th) ":";
+						font-size: 13px;
+						margin-right: 5px;
+						color: #2a2a2a;
+					}
+					&.qty {
+						text-align: left;
+					}
+				}
+			}
+			tfoot tr {
+				td, th {
+					display: block;
+					padding: 0 !important;
+					border: none !important;
+					text-align: left;
+				}
+			}
+		}
+	}
+}

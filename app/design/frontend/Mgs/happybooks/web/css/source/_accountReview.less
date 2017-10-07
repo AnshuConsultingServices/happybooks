@@ -1,0 +1,93 @@
+// MY REVIEW
+.table-reviews-dashboard {
+	thead tr th {
+		text-transform: uppercase;
+		color: #000;
+		font-weight: 700;
+		padding-left: 0;
+		border: none;
+	}
+	tbody tr td {
+		padding-left: 0;
+	}
+}
+
+#my-reviews-table {
+	.table-caption {
+		display: none;
+	}
+	thead tr th {
+		text-transform: uppercase;
+		color: #000;
+		font-weight: 700;
+		padding-left: 0;
+		border: none;
+		text-align: center;
+	}
+	tbody tr td {
+		text-align: center;
+		&.summary .rating-summary {
+			.label {
+				display: none;
+			}
+			.rating-result {
+				float: none;
+			}
+		}
+	}
+}
+.customer-review.view {
+	.product-media {
+		overflow: hidden;
+        img { min-width: 100%; }
+	}
+	.product-info {
+		.product-name {
+			font-size: 20px;
+            margin-bottom: 10px;
+		}
+		.rating-average-label {
+			font-weight: 600;
+			color: #000;
+			margin-bottom: 4px;
+			display: block;
+		}
+	}
+	.review-details {
+		padding-top: 30px;
+		> .title {
+			text-transform: uppercase;
+			color: #000;
+			font-size: 16px;
+			margin-bottom: 8px;
+			padding: 10px 0;
+		}
+		.review-content {
+			padding: 10px 0;
+		}
+		.review-date {
+			font-style: italic;
+			color: @base-color;
+		}
+		.rating-result {
+			display: inline-block;
+		}
+		.rating-label {
+			font-weight: 700;
+			color: #000;
+			margin-right: 20px;
+			&:after {
+				content: ":";
+				display: inline-block;
+			}
+		}
+		.rating-summary.item {
+			padding: 5px 0;
+		}
+        .review-title {
+            margin-top: 30px;
+            color: #000;
+            font-weight: 600;
+        }
+	}
+}
