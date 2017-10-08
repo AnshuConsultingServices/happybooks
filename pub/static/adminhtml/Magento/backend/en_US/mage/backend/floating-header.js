@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/happybooks/lib/web/mage/backend/floating-header.js

@@ -1,1 +1,0 @@
-/Applications/MAMP/htdocs/happybooks/vendor/magento/module-catalog/view/adminhtml/web/catalog/product.js
