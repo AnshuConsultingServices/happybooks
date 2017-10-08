@@ -1,0 +1,209 @@
+<?php $helper = $this->helper('MGS\Mpanel\Helper\Data') ?>
+<?php $socialHelper = $this->helper('Mageplaza\SocialLogin\Helper\Data') ?>
+<?php if($helper->getStoreConfig('mgstheme/general/header')){$header = $helper->getStoreConfig('mgstheme/general/header');}else{$header = "header_1";}?>
+<?php $canUsePanel = $helper->acceptToUsePanel() ?>
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); ?>
+<?php $customerSession = $objectManager->create('Magento\Customer\Model\Session'); ?>
+<?php $customerUrl = $objectManager->create('Magento\Customer\Model\Url'); ?>
+
+
+<?php // Image Toogle menu button ?>
+<?php $imgToggleMenu = '<img src="'. $block->getViewFileUrl('images/hamburger-black.svg') .'" alt="'. __('Menu') .'">'; ?>
+
+<?php // Top Link ?>
+<?php $htmlTopLink = '<div class="dropdown dropdown-toplinks"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="pe-7s-user"></i></button><div class="dropdown-menu">'. $block->getChildHtml('top.links') .'</div></div>'; ?>
+
+<?php // Variable Layout Element ?>
+<?php $miniCart = $block->getChildHtml('minicart'); //Mini Cart ?>
+<?php $storeLanguage = $block->getChildHtml('store_language');//Language Option ?>
+<?php $currency = $block->getChildHtml('currency'); //Currenct Option ?>
+<?php $logo = $block->getChildHtml('logo'); //Logo ?>
+
+<?php $mgsMegamenu = $block->getChildHtml('megamenu'); // MGS_Megamenu ?>
+<?php if($mgsMegamenu == ""){ $mgsMegamenu = $block->getChildHtml('catalog.topnav'); } // Default menu magento ?>  
+
+<?php $topSearch = $block->getChildHtml('top.search'); // Top Search ?>
+<?php $storeSetting = $block->getChildHtml('store.settings'); // Store Setting ?>
+
+<?php // Setting Tab Panel ?>
+<?php $htmlTabSetting = "" ?>
+<?php if($storeSetting): ?>
+    <?php $htmlTabSetting = '<div id="main-Settingcontent" class="tab-pane">'.$storeSetting.'</div>'; ?>
+<?php endif ?>
+
+<?php // Login ?>
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session'); 
+$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+?>
+
+<?php //Tab content ?>
+<?php $htmlTabContent = '<div id="main-Menucontent" class="tab-pane active">'. $mgsMegamenu .'</div><div id="main-Accountcontent" class="tab-pane"><div class="top-links">'.$block->getChildHtml('top.links').'</div></div>'.$htmlTabSetting ; ?>
+
+
+<div class="hidden">
+	<div class="i-language"><?php echo $storeLanguage;?></div>
+	<div class="i-currency"><?php echo $currency;?></div>
+	<div class="i-top-search"><?php echo $topSearch;?></div>
+	<div class="i-megamenu"><?php echo $htmlTabContent;?></div>
+</div>
+<?php if($helper->getStoreConfig('mgstheme/general/sticky_menu')): ?>
+	<div id="placeholder-header" style="display: none"></div>
+<?php endif; ?>
+<div class="header-placeholder">
+<div class="header-content">
+	<div class="<?php if(($header == 'header_1')||($header == 'header_5')){echo __('container-fluid');}else{echo __('container');} ?>">
+		<?php if($header == 'header_1'||$header == 'header_2'||$header == 'header_5'): ?>
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-3 hidden-lg">
+					<div class="navbar-toggle-menu">
+						<button class="action nav-toggle"><?php echo $imgToggleMenu?></button>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+					<?php echo $logo ?>
+				</div>
+				<?php if(!($header == 'header_1')): ?>
+					<div class="hidden-md hidden-sm hidden-xs col-lg-7 col-md-6 col-sm-6 col-xs-6 tab-megamenu megamenu-content<?php if($block->getChildHtml('megamenu')!=''): ?> mgs-menu<?php else: ?> mgt-menu<?php endif ?>">
+						<div class="megamenu-hover"></div>
+					</div>
+				<?php endif;?>
+				<div class="<?php if(!($header == 'header_1')){echo __('col-lg-3');}else{echo __('col-lg-10');} ?> col-md-3 col-sm-3 col-xs-3">
+					<ul class="table-icon-menu">
+						<li class="hidden-md hidden-sm hidden-xs">
+							<button class="action-search hidden-md hidden-sm hidden-xs" onclick="showHideFormSearch()"><i class="pe-7s-search"></i></button>
+						</li>
+						<li class="hidden-md hidden-sm hidden-xs">
+							<?php if($customerSession->isLoggedIn()): ?>
+								<?php echo  $htmlTopLink; ?>
+							<?php else: ?>
+								<?php if($socialHelper->getConfigValue('sociallogin/general/is_enabled')):?>
+									<div class="links">
+										<a href="#social-login-popup" class="social-login" data-effect="mfp-move-from-top"><i class="pe-7s-user"></i></a>
+									</div>
+								<?php else: ?>
+									<button class="toogle-login">
+										<i class="pe-7s-user"></i>
+									</button>
+								<?php endif; ?>
+							<?php endif; ?>
+						</li>
+						<li><?php echo $miniCart ?></li>
+						<li class="navbar-toggle-menu hidden-md hidden-sm hidden-xs">
+							<button class="action nav-toggle"><?php if($header == 'header_1'):?><span><?php echo __('Menu ');?></span> <?php endif; ?><?php echo $imgToggleMenu?></button>
+						</li>
+					</ul>
+				</div>
+				<div class="hidden-md hidden-sm hidden-xs sidebar-menu megamenu-content<?php if($block->getChildHtml('megamenu')!=''): ?> mgs-menu<?php else: ?> mgt-menu<?php endif ?>">
+					<button class="action close-nav-button"><span class="pe-7s-close" aria-hidden="true"></span></button>
+					<div class="language currency swicther"></div>
+					<div class="clearfix"></div>
+					<?php if($header == 'header_1'): ?>
+						<div class="megamenu-click"></div>
+					<?php endif;?>
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header_contact_us')->setCanUsePanel($canUsePanel)->toHtml() ?>
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header_social_link')->setCanUsePanel($canUsePanel)->toHtml() ?>
+				</div>
+			</div>
+		<?php endif;?>
+			
+		<?php if($header == 'header_3'||$header == 'header_4'): ?>
+			<?php if($header == 'header_4'): ?>
+				<div class="top-header text-center hidden-md hidden-sm hidden-xs">
+					<?php echo __('Free Shipping On The World For All Orders Over $99!');?>
+				</div>
+			<?php endif; ?>
+			<div class="middle-header">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-3 hidden-lg">
+						<div class="navbar-toggle-menu">
+							<button class="action nav-toggle"><?php echo $imgToggleMenu?></button>
+						</div>
+					</div>
+					<div class="col-lg-4 hidden-md hidden-sm hidden-xs">
+						<?php if($header == 'header_3'):?>
+							<div class="no-popup top-search"></div>	
+						<?php else:?>
+							<div class="language currency swicther"></div>	
+						<?php endif;?>
+						
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+						<?php echo $logo ?>
+					</div>
+					<div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+						<ul class="table-icon-menu pull-right">
+							<li class="hidden-md hidden-sm hidden-xs">
+								<?php if($header == 'header_4'):?>
+									<button class="action-search hidden-md hidden-sm hidden-xs" onclick="showHideFormSearch()"><i class="pe-7s-search"></i></button>
+								<?php else:?>
+									<div class="language currency swicther"></div>
+									<span class="clearfix"></span>
+								<?php endif;?>
+							</li>
+							<li class="hidden-md hidden-sm hidden-xs">
+								<?php if($customerSession->isLoggedIn()): ?>
+									<?php echo  $htmlTopLink; ?>
+								<?php else: ?>
+									<?php if($socialHelper->getConfigValue('sociallogin/general/is_enabled')):?>
+										<div class="links">
+											<a href="#social-login-popup" class="social-login" data-effect="mfp-move-from-top"><i class="pe-7s-user"></i></a>
+										</div>
+									<?php else: ?>
+										<button class="toogle-login">
+											<i class="pe-7s-user"></i>
+										</button>
+									<?php endif; ?>
+								<?php endif; ?>
+							</li>
+							<li><?php echo $miniCart ?></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-header hidden-md hidden-sm hidden-xs megamenu-content<?php if($block->getChildHtml('megamenu')!=''): ?> mgs-menu<?php else: ?> mgt-menu<?php endif ?>">
+				<div class="megamenu-hover"></div>
+			</div>
+		<?php endif;?>
+		
+		<div class="hidden-lg mobile sidebar-menu megamenu-content<?php if($block->getChildHtml('megamenu')!=''): ?> mgs-menu<?php else: ?> mgt-menu<?php endif ?>">
+			<button class="action close-nav-button"><span class="pe-7s-close" aria-hidden="true"></span></button>
+			<div class="no-popup top-search"></div>
+			<div class="megamenu-click"></div>
+			<ul class="header-link">
+				<li class="links">
+					<?php if($socialHelper->getConfigValue('sociallogin/general/is_enabled')):?>
+						<a href="#social-login-popup" class="social-login" data-effect="mfp-move-from-top"><?php echo __('Login') ?><i class="pe-7s-user"></i></a>
+					<?php else: ?>
+						<a href="<?php echo $storeManager->getStore()->getBaseUrl(); ?>customer/account/login"><?php echo __('Login') ?><i class="pe-7s-user"></i></a>
+					<?php endif; ?>
+				</li>
+				<li class="language"><span class="clearfix"></span></li>
+				<?php if($currency !=''): ?>
+					<li class="currency"></li>
+				<?php endif; ?>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="register-header">
+	<div>
+		<div id="change-form" class="change-form">
+			<a href="javascript:void(0)" class="acitve-login open"><?php echo __('Login') ?></a>
+			<a href="javascript:void(0)" class="acitve-register"><?php echo __('Register') ?></a>
+		</div>
+		<div class="register-form-header">
+			<?php echo $block->getChildHtml('customer_form_register_header') ?>
+			<a href="javascript:void(0)" class="closed-login"><?php echo __('Close') ?></a>
+		</div>
+		<div class="login-form-header open">
+			<?php echo $block->getChildHtml('customer_form_login_header') ?>
+			<a href="javascript:void(0)" class="closed-login"><?php echo __('Close') ?></a>
+		</div>
+	</div>
+</div>
+<?php if(!($header == 'header_3')): ?><div class="search-popup top-search"></div><?php endif; ?>
+</div>
+
+
+	

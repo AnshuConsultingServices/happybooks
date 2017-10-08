@@ -1,0 +1,116 @@
+<?php $block = $this->getBlock() ?>
+<?php $welcomeMessage = $block->getWelcome(); ?>
+<?php $helper = $this->helper('MGS\Mpanel\Helper\Data') ?>
+<?php $canUsePanel = $helper->acceptToUsePanel() ?>
+
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); ?>
+<?php $customerSession = $objectManager->create('Magento\Customer\Model\Session'); ?>
+<?php $customerUrl = $objectManager->create('Magento\Customer\Model\Url'); ?>
+
+<div class="header-content">
+	<div class="middle-header-content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3 hidden-lg">
+				<div class="navbar-toggle-menu">
+					<button class="action nav-toggle">
+						<img src="<?php echo $block->getViewFileUrl('images/hamburger-black.svg'); ?>" alt="<?php echo __('Menu') ?>">
+					</button>
+				</div>
+			</div>
+			<div class="menu-logo col-lg-4 col-md-6 col-sm-6 col-xs-6">
+				<?php echo $block->getChildHtml('logo') ?>
+			</div>
+			<div class="col-lg-8 col-md-3 col-sm-3 col-xs-3">
+				<ul class="table-icon-menu pull-right">
+					<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+					$customerSession = $objectManager->get('Magento\Customer\Model\Session'); 
+					$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+					?>
+					<li class="hidden-md hidden-sm hidden-xs">
+						<button class="action-search hidden-md hidden-sm hidden-xs" onclick="showHideFormSearch()"><i class="pe-7s-search"></i></button>
+					</li>
+					<li class="hidden-md hidden-sm hidden-xs">
+						<?php if(!$customerSession->isLoggedIn()): ?>
+							<button class="toogle-login" href="javascript:void(0)" title="<?php echo __('Login') ?>">
+								<i class="pe-7s-user"></i>
+							</button>
+						<?php else: ?>
+							<a href="<?php echo $storeManager->getStore()->getBaseUrl(); ?>customer/account/logout/" title="<?php echo __('Logout') ?>">
+								<i class="fa fa-sign-out"></i>
+							</a>
+						<?php endif ?>
+					</li>
+					<li><?php echo $block->getChildHtml('minicart') ?></li>
+					<li class="navbar-toggle-menu hidden-md hidden-sm hidden-xs">
+						<button class="action nav-toggle">
+							<span>Menu</span>
+							<img src="<?php echo $block->getViewFileUrl('images/hamburger-black.svg'); ?>" alt="">
+						</button>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="hidden-md hidden-sm hidden-xs sidebar-menu megamenu-content<?php if($block->getChildHtml('megamenu')!=''): ?> mgs-menu<?php else: ?> mgt-menu<?php endif ?>">
+				<button class="action close-nav-button"><span class="pe-7s-close" aria-hidden="true"></span></button>
+				
+				<?php echo $block->getChildHtml('store_language') ?>
+				<?php echo $block->getChildHtml('currency') ?>
+				<div class="clearfix"></div>
+				
+				<div class="tab-content">
+					<div id="main-Menucontent" class="tab-pane active">
+						<?php if($block->getChildHtml('megamenu')!=''): ?>
+							<?php echo $block->getChildHtml('megamenu') ?>
+						<?php else: ?>
+							<?php echo $block->getChildHtml('catalog.topnav') ?>
+						<?php endif ?>
+					</div>
+				</div>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header_contact_us')->setCanUsePanel($canUsePanel)->toHtml() ?>
+				<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header_social_link')->setCanUsePanel($canUsePanel)->toHtml() ?>
+			</div>
+			
+			<div class="hidden-lg mobile sidebar-menu megamenu-content<?php if($block->getChildHtml('megamenu')!=''): ?> mgs-menu<?php else: ?> mgt-menu<?php endif ?>">
+				<button class="action close-nav-button"><span class="pe-7s-close" aria-hidden="true"></span></button>
+				
+				<?php echo $block->getChildHtml('top.search') ?>
+				<div class="tab-content">
+					<div id="main-Menucontent" class="tab-pane active">
+						<?php if($block->getChildHtml('megamenu')!=''): ?>
+							<?php echo $block->getChildHtml('megamenu') ?>
+						<?php else: ?>
+							<?php echo $block->getChildHtml('catalog.topnav') ?>
+						<?php endif ?>
+					</div>
+				</div>
+				<ul class="header-link">
+					<li><a href="./customer/account/login"><?php echo __('Login') ?><i class="pe-7s-user"></i></a></li>
+					<li><?php echo $block->getChildHtml('store_language') ?></li>
+					<div class="clearfix"></div>
+					<li><?php echo $block->getChildHtml('currency') ?></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	</div>
+</div>
+<div class="register-header">
+	<div>
+		<div id="change-form" class="change-form">
+			<a href="javascript:void(0)" class="acitve-login open"><?php echo __('Login') ?></a>
+			<a href="javascript:void(0)" class="acitve-register"><?php echo __('Register') ?></a>
+		</div>
+		<div class="register-form-header">
+			<?php echo $block->getChildHtml('customer_form_register_header') ?>
+			<a href="javascript:void(0)" class="closed-login"><?php echo __('Close') ?></a>
+		</div>
+		<div class="login-form-header open">
+			<?php echo $block->getChildHtml('customer_form_login_header') ?>
+			<a href="javascript:void(0)" class="closed-login"><?php echo __('Close') ?></a>
+		</div>
+	</div>
+</div>
+<?php echo $block->getChildHtml('top.search') ?>
+

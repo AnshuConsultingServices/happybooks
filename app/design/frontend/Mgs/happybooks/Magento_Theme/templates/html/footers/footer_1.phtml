@@ -1,0 +1,33 @@
+<?php $helper = $this->helper('MGS\Mpanel\Helper\Data') ?>
+<?php $canUsePanel = $helper->acceptToUsePanel() ?>
+<?php $block = $this->getBlock() ?>
+<div class="footer-container">
+	<div class="middle-footer">
+		<div class="container">
+			<div class="row">
+				<div class="cl-md-ft col-md-4 col-sm-12 col-xs-12 logo">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_logo')->setCanUsePanel($canUsePanel)->toHtml() ?>
+				</div>
+				<div class="cl-md-ft col-md-5 col-sm-12 col-xs-12 col-right">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_newsletter')->setCanUsePanel($canUsePanel)->toHtml() ?>
+				</div>
+				<div class="cl-md-ft col-md-3 col-sm-12 col-xs-12">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_social_link')->setCanUsePanel($canUsePanel)->toHtml() ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-footer">
+		<div class="container">
+			<div class="footer-separator"></div>
+			<div class="row">
+				<div class="col-md-6 col-xs-12 footer-copyright">
+					<address><?php echo $block->getCopyright() ?></address>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_bottom_menu')->setCanUsePanel($canUsePanel)->toHtml() ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
