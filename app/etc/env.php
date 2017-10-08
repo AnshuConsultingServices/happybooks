@@ -35,7 +35,7 @@ return array (
     ),
   ),
   'x-frame-options' => 'SAMEORIGIN',
-  'MAGE_MODE' => 'default',
+  'MAGE_MODE' => 'developer',
   'cache_types' => 
   array (
     'config' => 0,

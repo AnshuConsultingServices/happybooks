@@ -2,6 +2,7 @@
 return array (
   'modules' => 
   array (
+    'Happybooks_SubmitBook' => 1,
     'Magento_Store' => 1,
     'MGS_Blog' => 1,
     'Magento_Directory' => 1,
@@ -138,6 +139,7 @@ return array (
     'Magento_Wishlist' => 1,
     'Magento_WishlistSampleData' => 1,
     'Mageplaza_Core' => 1,
+    'Mageplaza_HelloWorld' => 1,
     'Mageplaza_SocialLogin' => 1,
   ),
 );
