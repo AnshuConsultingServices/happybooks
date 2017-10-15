@@ -2,11 +2,11 @@
 return array (
   'backend' => 
   array (
-    'frontName' => 'admin_1x1lui',
+    'frontName' => 'admin_k69ysq',
   ),
   'crypt' => 
   array (
-    'key' => '72b5f19470606a6e1b656d055ce9c69e',
+    'key' => '7572775115c3328de8e6e5d4337452ef',
   ),
   'session' => 
   array (
@@ -20,7 +20,7 @@ return array (
       'default' => 
       array (
         'host' => 'localhost',
-        'dbname' => 'happybooks',
+        'dbname' => 'mybooks',
         'username' => 'root',
         'password' => 'root',
         'active' => '1',
@@ -54,6 +54,6 @@ return array (
   ),
   'install' => 
   array (
-    'date' => 'Thu, 05 Oct 2017 10:50:32 +0000',
+    'date' => 'Sun, 15 Oct 2017 08:56:31 +0000',
   ),
 );
